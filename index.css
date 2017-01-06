@@ -531,8 +531,7 @@ i.collapse:hover {
   margin: 5px 0;
   color: #e68300;
 }
-span,
-p {
+body {
   color: #666;
   font-size: 14px;
 }

@@ -1633,7 +1633,7 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1144);
+	module.exports = __webpack_require__(1145);
 
 /***/ },
 /* 54 */
@@ -4211,7 +4211,7 @@ webpackJsonp([0,18],[
 	});
 	exports.KLS_NAMESPACE = exports.CERES_FILE_SERVICE = exports.CERES_UPLOAD_SERVICE = exports.CERES_UPLOAD_NAME = exports.CERES_ROLE_ADMIN = exports.CERES_ROLE_SUPPLIER = exports.LS_NAMESPACE = exports.SERVICE_PREFIX = undefined;
 
-	var _env = __webpack_require__(185);
+	var _env = __webpack_require__(186);
 
 	// 服务前缀
 	var servicePrefix = '';
@@ -6932,15 +6932,15 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _classCallCheck2 = __webpack_require__(167);
+	var _classCallCheck2 = __webpack_require__(169);
 
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-	var _possibleConstructorReturn2 = __webpack_require__(170);
+	var _possibleConstructorReturn2 = __webpack_require__(172);
 
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-	var _inherits2 = __webpack_require__(169);
+	var _inherits2 = __webpack_require__(171);
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -8310,52 +8310,11 @@ webpackJsonp([0,18],[
 /* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(181);
+	module.exports = __webpack_require__(183);
 
 
 /***/ },
-/* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */,
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var freeGlobal = __webpack_require__(602);
-
-	/** Detect free variable `self`. */
-	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-	/** Used as a reference to the global object. */
-	var root = freeGlobal || freeSelf || Function('return this')();
-
-	module.exports = root;
-
-
-/***/ },
-/* 146 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _AutoComplete = __webpack_require__(244);
-
-	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
-
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { 'default': obj };
-	}
-
-	exports['default'] = _AutoComplete2['default'];
-	module.exports = exports['default'];
-
-/***/ },
-/* 147 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8373,6 +8332,47 @@ webpackJsonp([0,18],[
 	}
 
 	exports['default'] = _Fetch2['default'];
+	module.exports = exports['default'];
+
+/***/ },
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var freeGlobal = __webpack_require__(602);
+
+	/** Detect free variable `self`. */
+	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || Function('return this')();
+
+	module.exports = root;
+
+
+/***/ },
+/* 147 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _AutoComplete = __webpack_require__(244);
+
+	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	exports['default'] = _AutoComplete2['default'];
 	module.exports = exports['default'];
 
 /***/ },
@@ -8397,7 +8397,7 @@ webpackJsonp([0,18],[
 	var GregorianCalendar = __webpack_require__(64);
 	var enUsLocale = __webpack_require__(202);
 	var MAX_VALUE = Number.MAX_VALUE;
-	var warning = __webpack_require__(182);
+	var warning = __webpack_require__(184);
 
 	/**
 	 * date or time style enum
@@ -9347,15 +9347,196 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 159 */,
-/* 160 */,
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	} : function (obj) {
+	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	};
+
+	var _Dialog = __webpack_require__(225);
+
+	var _Dialog2 = _interopRequireDefault(_Dialog);
+
+	var _i18n = __webpack_require__(9);
+
+	var _i18n2 = _interopRequireDefault(_i18n);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
+
+	var dlg = {};
+
+	var uxConfirm = _Dialog2['default'].confirm;
+	var uxAlert = _Dialog2['default'].info;
+	var uxSuccess = _Dialog2['default'].success;
+	var uxError = _Dialog2['default'].error;
+	var defaultWidth = 290;
+	var lang = (0, _i18n2['default'])('common.locale');
+
+	var processString = function processString(string) {
+	  if ((typeof string === 'undefined' ? 'undefined' : _typeof(string)) === 'object') {
+	    return {
+	      title: string.title,
+	      content: string.content
+	    };
+	  }
+	  return {
+	    title: string
+	  };
+	};
+
+	dlg.confirm = function (string, onOk, onCancel) {
+	  var option = {};
+	  var body = processString(string);
+	  option.title = body.title;
+	  if (body.content) {
+	    option.content = body.content;
+	  }
+	  option.transitionName = 'fall';
+	  option.closable = false;
+	  option.width = defaultWidth;
+	  option.onOk = onOk;
+	  option.onCancel = onCancel;
+	  option.locale = lang;
+	  uxConfirm(option);
+	};
+
+	dlg.alert = function (string, onOk) {
+	  var option = {};
+	  option.transitionName = 'fall';
+	  option.closable = false;
+	  var body = processString(string);
+	  option.title = body.title;
+	  if (body.content) {
+	    option.content = body.content;
+	  }
+	  option.width = defaultWidth;
+	  option.onOk = onOk;
+	  option.locale = lang;
+	  uxAlert(option);
+	};
+
+	dlg.success = function (string, onOk) {
+	  var option = {};
+	  option.transitionName = 'fall';
+	  option.closable = false;
+	  var body = processString(string);
+	  option.title = body.title;
+	  if (body.content) {
+	    option.content = body.content;
+	  }
+	  option.width = defaultWidth;
+	  option.onOk = onOk;
+	  option.locale = lang;
+	  uxSuccess(option);
+	};
+
+	dlg.error = function (string, onOk) {
+	  var option = {};
+	  option.transitionName = 'fall';
+	  option.closable = false;
+	  var body = processString(string);
+	  option.title = body.title;
+	  if (body.content) {
+	    option.content = body.content;
+	  }
+	  option.width = defaultWidth;
+	  option.onOk = onOk;
+	  option.locale = lang;
+	  uxError(option);
+	};
+
+	exports['default'] = dlg;
+	module.exports = exports['default'];
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.isObject = exports.processToNull = exports.isEmptyObject = exports.deepEqual = exports.deepCopy = undefined;
+
+	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	} : function (obj) {
+	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	};
+
+	var _array = __webpack_require__(228);
+
+	var deepCopy = exports.deepCopy = function deepCopy(obj) {
+	  return JSON.parse(JSON.stringify(obj));
+	};
+
+	var deepEqual = exports.deepEqual = function deepEqual(o1, o2) {
+	  return JSON.stringify(o1) === JSON.stringify(o2);
+	};
+
+	var isEmptyObject = exports.isEmptyObject = function isEmptyObject(obj) {
+	  if (typeof obj === 'undefined' || obj === null) {
+	    return true;
+	  }
+	  var keys = Object.keys(obj);
+	  if (keys.length > 0) {
+	    return false;
+	  }
+	  return true;
+	};
+
+	// 接收一个对象，如果是空数组、空对象、空数组中都是空对象、空字符串、0、null 都转成 null
+	var processToNull = exports.processToNull = function processToNull(obj) {
+	  if ((0, _array.isArray)(obj)) {
+	    for (var i = 0, l = obj.length; i < l; i++) {
+	      if (_typeof(obj[i]) !== 'object' && typeof obj[i] !== 'undefined') {
+	        return obj;
+	      } else if (typeof obj[i] !== 'undefined' && !isEmptyObject(obj[i])) {
+	        return obj;
+	      }
+	    }
+	    return null;
+	  } else if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object') {
+	    if (isEmptyObject(obj)) {
+	      return null;
+	    }
+	    return obj;
+	  } else if (obj === undefined || obj === '' || obj === null) {
+	    return null;
+	  }
+	  return obj;
+	};
+
+	var isObject = exports.isObject = function isObject(obj) {
+	  return Object.prototype.toString.call(obj) === '[object Object]';
+	};
+
+/***/ },
 /* 161 */,
 /* 162 */,
 /* 163 */,
 /* 164 */,
 /* 165 */,
 /* 166 */,
-/* 167 */
+/* 167 */,
+/* 168 */,
+/* 169 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9369,7 +9550,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 168 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9398,7 +9579,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 169 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9436,7 +9617,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9458,13 +9639,13 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var LIBRARY        = __webpack_require__(109)
 	  , $export        = __webpack_require__(23)
-	  , redefine       = __webpack_require__(174)
+	  , redefine       = __webpack_require__(176)
 	  , hide           = __webpack_require__(24)
 	  , has            = __webpack_require__(19)
 	  , Iterators      = __webpack_require__(108)
@@ -9533,7 +9714,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pIE            = __webpack_require__(33)
@@ -9554,7 +9735,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 173 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
@@ -9566,13 +9747,13 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(24);
 
 /***/ },
-/* 175 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9580,7 +9761,7 @@ webpackJsonp([0,18],[
 	module.exports = __webpack_require__(297);
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports) {
 
 	/**
@@ -9617,7 +9798,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9648,7 +9829,7 @@ webpackJsonp([0,18],[
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _domScrollIntoView = __webpack_require__(175);
+	var _domScrollIntoView = __webpack_require__(177);
 
 	var _domScrollIntoView2 = _interopRequireDefault(_domScrollIntoView);
 
@@ -9969,7 +10150,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 178 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9978,15 +10159,15 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _classCallCheck2 = __webpack_require__(167);
+	var _classCallCheck2 = __webpack_require__(169);
 
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-	var _possibleConstructorReturn2 = __webpack_require__(170);
+	var _possibleConstructorReturn2 = __webpack_require__(172);
 
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-	var _inherits2 = __webpack_require__(169);
+	var _inherits2 = __webpack_require__(171);
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -10014,7 +10195,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 179 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10022,7 +10203,7 @@ webpackJsonp([0,18],[
 	module.exports = __webpack_require__(216);
 
 /***/ },
-/* 180 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10038,7 +10219,7 @@ webpackJsonp([0,18],[
 	module.exports = __webpack_require__(329);
 
 /***/ },
-/* 181 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10054,7 +10235,7 @@ webpackJsonp([0,18],[
 	module.exports = __webpack_require__(224);
 
 /***/ },
-/* 182 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10120,122 +10301,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 183 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	} : function (obj) {
-	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	};
-
-	var _Dialog = __webpack_require__(225);
-
-	var _Dialog2 = _interopRequireDefault(_Dialog);
-
-	var _i18n = __webpack_require__(9);
-
-	var _i18n2 = _interopRequireDefault(_i18n);
-
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { 'default': obj };
-	}
-
-	var dlg = {};
-
-	var uxConfirm = _Dialog2['default'].confirm;
-	var uxAlert = _Dialog2['default'].info;
-	var uxSuccess = _Dialog2['default'].success;
-	var uxError = _Dialog2['default'].error;
-	var defaultWidth = 290;
-	var lang = (0, _i18n2['default'])('common.locale');
-
-	var processString = function processString(string) {
-	  if ((typeof string === 'undefined' ? 'undefined' : _typeof(string)) === 'object') {
-	    return {
-	      title: string.title,
-	      content: string.content
-	    };
-	  }
-	  return {
-	    title: string
-	  };
-	};
-
-	dlg.confirm = function (string, onOk, onCancel) {
-	  var option = {};
-	  var body = processString(string);
-	  option.title = body.title;
-	  if (body.content) {
-	    option.content = body.content;
-	  }
-	  option.transitionName = 'fall';
-	  option.closable = false;
-	  option.width = defaultWidth;
-	  option.onOk = onOk;
-	  option.onCancel = onCancel;
-	  option.locale = lang;
-	  uxConfirm(option);
-	};
-
-	dlg.alert = function (string, onOk) {
-	  var option = {};
-	  option.transitionName = 'fall';
-	  option.closable = false;
-	  var body = processString(string);
-	  option.title = body.title;
-	  if (body.content) {
-	    option.content = body.content;
-	  }
-	  option.width = defaultWidth;
-	  option.onOk = onOk;
-	  option.locale = lang;
-	  uxAlert(option);
-	};
-
-	dlg.success = function (string, onOk) {
-	  var option = {};
-	  option.transitionName = 'fall';
-	  option.closable = false;
-	  var body = processString(string);
-	  option.title = body.title;
-	  if (body.content) {
-	    option.content = body.content;
-	  }
-	  option.width = defaultWidth;
-	  option.onOk = onOk;
-	  option.locale = lang;
-	  uxSuccess(option);
-	};
-
-	dlg.error = function (string, onOk) {
-	  var option = {};
-	  option.transitionName = 'fall';
-	  option.closable = false;
-	  var body = processString(string);
-	  option.title = body.title;
-	  if (body.content) {
-	    option.content = body.content;
-	  }
-	  option.width = defaultWidth;
-	  option.onOk = onOk;
-	  option.locale = lang;
-	  uxError(option);
-	};
-
-	exports['default'] = dlg;
-	module.exports = exports['default'];
-
-/***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10266,7 +10332,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10328,72 +10394,6 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 186 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.isObject = exports.processToNull = exports.isEmptyObject = exports.deepEqual = exports.deepCopy = undefined;
-
-	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	} : function (obj) {
-	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	};
-
-	var _array = __webpack_require__(228);
-
-	var deepCopy = exports.deepCopy = function deepCopy(obj) {
-	  return JSON.parse(JSON.stringify(obj));
-	};
-
-	var deepEqual = exports.deepEqual = function deepEqual(o1, o2) {
-	  return JSON.stringify(o1) === JSON.stringify(o2);
-	};
-
-	var isEmptyObject = exports.isEmptyObject = function isEmptyObject(obj) {
-	  if (typeof obj === 'undefined' || obj === null) {
-	    return true;
-	  }
-	  var keys = Object.keys(obj);
-	  if (keys.length > 0) {
-	    return false;
-	  }
-	  return true;
-	};
-
-	// 接收一个对象，如果是空数组、空对象、空数组中都是空对象、空字符串、0、null 都转成 null
-	var processToNull = exports.processToNull = function processToNull(obj) {
-	  if ((0, _array.isArray)(obj)) {
-	    for (var i = 0, l = obj.length; i < l; i++) {
-	      if (_typeof(obj[i]) !== 'object' && typeof obj[i] !== 'undefined') {
-	        return obj;
-	      } else if (typeof obj[i] !== 'undefined' && !isEmptyObject(obj[i])) {
-	        return obj;
-	      }
-	    }
-	    return null;
-	  } else if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object') {
-	    if (isEmptyObject(obj)) {
-	      return null;
-	    }
-	    return obj;
-	  } else if (obj === undefined || obj === '' || obj === null) {
-	    return null;
-	  }
-	  return obj;
-	};
-
-	var isObject = exports.isObject = function isObject(obj) {
-	  return Object.prototype.toString.call(obj) === '[object Object]';
-	};
-
-/***/ },
 /* 187 */,
 /* 188 */,
 /* 189 */,
@@ -10431,8 +10431,8 @@ webpackJsonp([0,18],[
 /* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsNative = __webpack_require__(1058),
-	    getValue = __webpack_require__(1089);
+	var baseIsNative = __webpack_require__(1059),
+	    getValue = __webpack_require__(1090);
 
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -12680,7 +12680,7 @@ webpackJsonp([0,18],[
 	'use strict';
 
 	var Formatter = __webpack_require__(65);
-	var Tooltip = __webpack_require__(181);
+	var Tooltip = __webpack_require__(183);
 	var classnames = __webpack_require__(4);
 	var i18n = __webpack_require__(486);
 	var React = __webpack_require__(1);
@@ -13175,7 +13175,7 @@ webpackJsonp([0,18],[
 	 */
 
 	var FormField = __webpack_require__(619);
-	FormField.createFormField = __webpack_require__(1148);
+	FormField.createFormField = __webpack_require__(1149);
 
 	module.exports = FormField;
 
@@ -13187,7 +13187,7 @@ webpackJsonp([0,18],[
 
 	exports.__esModule = true;
 
-	var _rcTooltip = __webpack_require__(179);
+	var _rcTooltip = __webpack_require__(181);
 
 	var _rcTooltip2 = _interopRequireDefault(_rcTooltip);
 
@@ -13237,7 +13237,7 @@ webpackJsonp([0,18],[
 /* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(180);
+	module.exports = __webpack_require__(182);
 
 
 /***/ },
@@ -13464,8 +13464,8 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(1038);
-	var isArguments = __webpack_require__(1037);
+	var objectKeys = __webpack_require__(1039);
+	var isArguments = __webpack_require__(1038);
 
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -13585,7 +13585,7 @@ webpackJsonp([0,18],[
 
 	var _Select2 = _interopRequireDefault(_Select);
 
-	var _Fetch = __webpack_require__(147);
+	var _Fetch = __webpack_require__(140);
 
 	var _Fetch2 = _interopRequireDefault(_Fetch);
 
@@ -13599,7 +13599,7 @@ webpackJsonp([0,18],[
 
 	var _Utils = __webpack_require__(15);
 
-	var _object = __webpack_require__(186);
+	var _object = __webpack_require__(160);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { 'default': obj };
@@ -13903,9 +13903,9 @@ webpackJsonp([0,18],[
 
 	var _Utils = __webpack_require__(15);
 
-	var _env = __webpack_require__(185);
+	var _env = __webpack_require__(186);
 
-	var _Dialog = __webpack_require__(183);
+	var _Dialog = __webpack_require__(159);
 
 	var _Dialog2 = _interopRequireDefault(_Dialog);
 
@@ -14154,7 +14154,7 @@ webpackJsonp([0,18],[
 
 	var _string = __webpack_require__(230);
 
-	var _Tip = __webpack_require__(184);
+	var _Tip = __webpack_require__(185);
 
 	var _EditingFormField2 = __webpack_require__(227);
 
@@ -15158,7 +15158,7 @@ webpackJsonp([0,18],[
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
 	var toIObject = __webpack_require__(13)
-	  , gOPN      = __webpack_require__(173).f
+	  , gOPN      = __webpack_require__(175).f
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -15211,7 +15211,7 @@ webpackJsonp([0,18],[
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
-	        set = __webpack_require__(58)(Function.call, __webpack_require__(172).f(Object.prototype, '__proto__').set, 2);
+	        set = __webpack_require__(58)(Function.call, __webpack_require__(174).f(Object.prototype, '__proto__').set, 2);
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -15261,7 +15261,7 @@ webpackJsonp([0,18],[
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
-	module.exports = __webpack_require__(171)(Array, 'Array', function(iterated, kind){
+	module.exports = __webpack_require__(173)(Array, 'Array', function(iterated, kind){
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -15324,7 +15324,7 @@ webpackJsonp([0,18],[
 	var $at  = __webpack_require__(286)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
-	__webpack_require__(171)(String, 'String', function(iterated){
+	__webpack_require__(173)(String, 'String', function(iterated){
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -15348,7 +15348,7 @@ webpackJsonp([0,18],[
 	  , has            = __webpack_require__(19)
 	  , DESCRIPTORS    = __webpack_require__(8)
 	  , $export        = __webpack_require__(23)
-	  , redefine       = __webpack_require__(174)
+	  , redefine       = __webpack_require__(176)
 	  , META           = __webpack_require__(281).KEY
 	  , $fails         = __webpack_require__(16)
 	  , shared         = __webpack_require__(47)
@@ -15366,7 +15366,7 @@ webpackJsonp([0,18],[
 	  , createDesc     = __webpack_require__(34)
 	  , _create        = __webpack_require__(110)
 	  , gOPNExt        = __webpack_require__(283)
-	  , $GOPD          = __webpack_require__(172)
+	  , $GOPD          = __webpack_require__(174)
 	  , $DP            = __webpack_require__(20)
 	  , $keys          = __webpack_require__(29)
 	  , gOPD           = $GOPD.f
@@ -15491,7 +15491,7 @@ webpackJsonp([0,18],[
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
-	  __webpack_require__(173).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(175).f = gOPNExt.f = $getOwnPropertyNames;
 	  __webpack_require__(33).f  = $propertyIsEnumerable;
 	  __webpack_require__(45).f = $getOwnPropertySymbols;
 
@@ -16338,7 +16338,7 @@ webpackJsonp([0,18],[
 /* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(145);
+	var root = __webpack_require__(146);
 
 	/** Built-in value references. */
 	var Symbol = root.Symbol;
@@ -16351,8 +16351,8 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(301),
-	    getRawTag = __webpack_require__(1088),
-	    objectToString = __webpack_require__(1115);
+	    getRawTag = __webpack_require__(1089),
+	    objectToString = __webpack_require__(1116);
 
 	/** `Object#toString` result references. */
 	var nullTag = '[object Null]',
@@ -16448,7 +16448,7 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayLikeKeys = __webpack_require__(594),
-	    baseKeys = __webpack_require__(1060),
+	    baseKeys = __webpack_require__(1061),
 	    isArrayLike = __webpack_require__(613);
 
 	/**
@@ -17302,7 +17302,7 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MenuMixin = __webpack_require__(177);
+	var _MenuMixin = __webpack_require__(179);
 
 	var _MenuMixin2 = _interopRequireDefault(_MenuMixin);
 
@@ -18335,7 +18335,7 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MenuMixin = __webpack_require__(177);
+	var _MenuMixin = __webpack_require__(179);
 
 	var _MenuMixin2 = _interopRequireDefault(_MenuMixin);
 
@@ -18551,7 +18551,7 @@ webpackJsonp([0,18],[
 
 	var _rcMenu2 = _interopRequireDefault(_rcMenu);
 
-	var _domScrollIntoView = __webpack_require__(175);
+	var _domScrollIntoView = __webpack_require__(177);
 
 	var _domScrollIntoView2 = _interopRequireDefault(_domScrollIntoView);
 
@@ -18727,7 +18727,7 @@ webpackJsonp([0,18],[
 
 	var _rcMenu = __webpack_require__(126);
 
-	var _warning = __webpack_require__(182);
+	var _warning = __webpack_require__(184);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -18735,7 +18735,7 @@ webpackJsonp([0,18],[
 
 	var _OptGroup2 = _interopRequireDefault(_OptGroup);
 
-	var _Option = __webpack_require__(178);
+	var _Option = __webpack_require__(180);
 
 	var _Option2 = _interopRequireDefault(_Option);
 
@@ -18866,7 +18866,7 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _defineProperty2 = __webpack_require__(168);
+	var _defineProperty2 = __webpack_require__(170);
 
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -19756,7 +19756,7 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _defineProperty2 = __webpack_require__(168);
+	var _defineProperty2 = __webpack_require__(170);
 
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -19949,7 +19949,7 @@ webpackJsonp([0,18],[
 
 	var _Select2 = _interopRequireDefault(_Select);
 
-	var _Option = __webpack_require__(178);
+	var _Option = __webpack_require__(180);
 
 	var _Option2 = _interopRequireDefault(_Option);
 
@@ -21461,17 +21461,17 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1028);
+	module.exports = __webpack_require__(1029);
 
 /***/ },
 /* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var listCacheClear = __webpack_require__(1101),
-	    listCacheDelete = __webpack_require__(1102),
-	    listCacheGet = __webpack_require__(1103),
-	    listCacheHas = __webpack_require__(1104),
-	    listCacheSet = __webpack_require__(1105);
+	var listCacheClear = __webpack_require__(1102),
+	    listCacheDelete = __webpack_require__(1103),
+	    listCacheGet = __webpack_require__(1104),
+	    listCacheHas = __webpack_require__(1105),
+	    listCacheSet = __webpack_require__(1106);
 
 	/**
 	 * Creates an list cache object.
@@ -21534,8 +21534,8 @@ webpackJsonp([0,18],[
 
 	var isArray = __webpack_require__(156),
 	    isKey = __webpack_require__(452),
-	    stringToPath = __webpack_require__(1123),
-	    toString = __webpack_require__(1134);
+	    stringToPath = __webpack_require__(1124),
+	    toString = __webpack_require__(1135);
 
 	/**
 	 * Casts `value` to a path array if it's not one.
@@ -21605,7 +21605,7 @@ webpackJsonp([0,18],[
 /* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isKeyable = __webpack_require__(1099);
+	var isKeyable = __webpack_require__(1100);
 
 	/**
 	 * Gets the data for `map`.
@@ -21641,7 +21641,7 @@ webpackJsonp([0,18],[
 /* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseClone = __webpack_require__(1052);
+	var baseClone = __webpack_require__(1053);
 
 	/** Used to compose bitmasks for cloning. */
 	var CLONE_DEEP_FLAG = 1,
@@ -21855,7 +21855,7 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _Fetch = __webpack_require__(147);
+	var _Fetch = __webpack_require__(140);
 
 	var _Fetch2 = _interopRequireDefault(_Fetch);
 
@@ -22125,7 +22125,7 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var immediate = __webpack_require__(1039);
+	var immediate = __webpack_require__(1040);
 
 	/* istanbul ignore next */
 	function INTERNAL() {}
@@ -22384,7 +22384,7 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203),
-	    root = __webpack_require__(145);
+	    root = __webpack_require__(146);
 
 	/* Built-in method references that are verified to be native. */
 	var Map = getNative(root, 'Map');
@@ -22396,11 +22396,11 @@ webpackJsonp([0,18],[
 /* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var mapCacheClear = __webpack_require__(1106),
-	    mapCacheDelete = __webpack_require__(1107),
-	    mapCacheGet = __webpack_require__(1108),
-	    mapCacheHas = __webpack_require__(1109),
-	    mapCacheSet = __webpack_require__(1110);
+	var mapCacheClear = __webpack_require__(1107),
+	    mapCacheDelete = __webpack_require__(1108),
+	    mapCacheGet = __webpack_require__(1109),
+	    mapCacheHas = __webpack_require__(1110),
+	    mapCacheSet = __webpack_require__(1111);
 
 	/**
 	 * Creates a map cache object to store key-value pairs.
@@ -22435,11 +22435,11 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(362),
-	    stackClear = __webpack_require__(1118),
-	    stackDelete = __webpack_require__(1119),
-	    stackGet = __webpack_require__(1120),
-	    stackHas = __webpack_require__(1121),
-	    stackSet = __webpack_require__(1122);
+	    stackClear = __webpack_require__(1119),
+	    stackDelete = __webpack_require__(1120),
+	    stackGet = __webpack_require__(1121),
+	    stackHas = __webpack_require__(1122),
+	    stackSet = __webpack_require__(1123);
 
 	/**
 	 * Creates a stack cache object to store key-value pairs.
@@ -22531,8 +22531,8 @@ webpackJsonp([0,18],[
 /* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(1056),
-	    isObject = __webpack_require__(176),
+	var baseIsEqualDeep = __webpack_require__(1057),
+	    isObject = __webpack_require__(178),
 	    isObjectLike = __webpack_require__(304);
 
 	/**
@@ -22761,8 +22761,8 @@ webpackJsonp([0,18],[
 /* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(145),
-	    stubFalse = __webpack_require__(1133);
+	/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(146),
+	    stubFalse = __webpack_require__(1134);
 
 	/** Detect free variable `exports`. */
 	var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -26651,7 +26651,7 @@ webpackJsonp([0,18],[
 /* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(145);
+	var root = __webpack_require__(146);
 
 	/** Built-in value references. */
 	var Uint8Array = root.Uint8Array;
@@ -26663,7 +26663,7 @@ webpackJsonp([0,18],[
 /* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseTimes = __webpack_require__(1068),
+	var baseTimes = __webpack_require__(1069),
 	    isArguments = __webpack_require__(612),
 	    isArray = __webpack_require__(156),
 	    isBuffer = __webpack_require__(456),
@@ -26803,7 +26803,7 @@ webpackJsonp([0,18],[
 /* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var defineProperty = __webpack_require__(1083);
+	var defineProperty = __webpack_require__(1084);
 
 	/**
 	 * The base implementation of `assignValue` and `assignMergeValue` without
@@ -26860,11 +26860,11 @@ webpackJsonp([0,18],[
 /* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseMatches = __webpack_require__(1062),
-	    baseMatchesProperty = __webpack_require__(1063),
-	    identity = __webpack_require__(1126),
+	var baseMatches = __webpack_require__(1063),
+	    baseMatchesProperty = __webpack_require__(1064),
+	    identity = __webpack_require__(1127),
 	    isArray = __webpack_require__(156),
-	    property = __webpack_require__(1132);
+	    property = __webpack_require__(1133);
 
 	/**
 	 * The base implementation of `_.iteratee`.
@@ -26897,9 +26897,9 @@ webpackJsonp([0,18],[
 /* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var SetCache = __webpack_require__(1044),
-	    arraySome = __webpack_require__(1049),
-	    cacheHas = __webpack_require__(1071);
+	var SetCache = __webpack_require__(1045),
+	    arraySome = __webpack_require__(1050),
+	    cacheHas = __webpack_require__(1072);
 
 	/** Used to compose bitmasks for value comparisons. */
 	var COMPARE_PARTIAL_FLAG = 1,
@@ -27063,11 +27063,11 @@ webpackJsonp([0,18],[
 /* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var DataView = __webpack_require__(1040),
+	var DataView = __webpack_require__(1041),
 	    Map = __webpack_require__(443),
-	    Promise = __webpack_require__(1042),
-	    Set = __webpack_require__(1043),
-	    WeakMap = __webpack_require__(1045),
+	    Promise = __webpack_require__(1043),
+	    Set = __webpack_require__(1044),
+	    WeakMap = __webpack_require__(1046),
 	    baseGetTag = __webpack_require__(302),
 	    toSource = __webpack_require__(611);
 
@@ -27127,7 +27127,7 @@ webpackJsonp([0,18],[
 /* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(176);
+	var isObject = __webpack_require__(178);
 
 	/**
 	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
@@ -27254,7 +27254,7 @@ webpackJsonp([0,18],[
 /* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsArguments = __webpack_require__(1055),
+	var baseIsArguments = __webpack_require__(1056),
 	    isObjectLike = __webpack_require__(304);
 
 	/** Used for built-in method references. */
@@ -27377,7 +27377,7 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(302),
-	    isObject = __webpack_require__(176);
+	    isObject = __webpack_require__(178);
 
 	/** `Object#toString` result references. */
 	var asyncTag = '[object AsyncFunction]',
@@ -27419,9 +27419,9 @@ webpackJsonp([0,18],[
 /* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsTypedArray = __webpack_require__(1059),
-	    baseUnary = __webpack_require__(1070),
-	    nodeUtil = __webpack_require__(1114);
+	var baseIsTypedArray = __webpack_require__(1060),
+	    baseUnary = __webpack_require__(1071),
+	    nodeUtil = __webpack_require__(1115);
 
 	/* Node.js helper references. */
 	var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -27453,7 +27453,7 @@ webpackJsonp([0,18],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayLikeKeys = __webpack_require__(594),
-	    baseKeysIn = __webpack_require__(1061),
+	    baseKeysIn = __webpack_require__(1062),
 	    isArrayLike = __webpack_require__(613);
 
 	/**
@@ -28089,7 +28089,7 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1163);
+	module.exports = __webpack_require__(1164);
 
 /***/ },
 /* 622 */
@@ -28105,7 +28105,7 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1184);
+	module.exports = __webpack_require__(1185);
 
 /***/ },
 /* 623 */
@@ -28121,8 +28121,8 @@ webpackJsonp([0,18],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
-	var FileItem = __webpack_require__(1208);
-	var DefaultFileItem = __webpack_require__(1206);
+	var FileItem = __webpack_require__(1209);
+	var DefaultFileItem = __webpack_require__(1207);
 	var Picker = __webpack_require__(487);
 
 	var _require = __webpack_require__(327);
@@ -28227,8 +28227,7 @@ webpackJsonp([0,18],[
 /* 629 */,
 /* 630 */,
 /* 631 */,
-/* 632 */,
-/* 633 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28241,6 +28240,10 @@ webpackJsonp([0,18],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _Fetch = __webpack_require__(140);
+
+	var _Fetch2 = _interopRequireDefault(_Fetch);
+
 	var _Form = __webpack_require__(655);
 
 	var _Form2 = _interopRequireDefault(_Form);
@@ -28249,9 +28252,7 @@ webpackJsonp([0,18],[
 
 	module.exports = {
 	  "content": ["article", {}, function jsonmlReactLoader() {
-	    var _this = this;
-
-	    var simpleConfig = { title: '内置组件', fields: [['name', 'date'], ['textarea', 'select'], ['asyncSelect1', 'asyncSelect2'], ['search', ''], ['radio', 'checkbox'], ['multiSelect'], ['editor'], ['SUBMIT']], labels: { name: '普通文本输入[这里是placeholder|这是info]', date: '日期时间段[这里是placeholder|这是日期]', number: '数字输入控件', textarea: '多行文本输入[这里是placeholder|这是多行文本]', search: '搜索组件[请搜索|这是搜索]', radio: '单选组[请单选|这是单选组]', checkbox: '多选组[请选择|这是多选组]', select: '下拉选择[请选择]', employee: '雇员搜索[工号/花名]', cgtype: '采购类型', asyncSelect1: '异步Select1', asyncSelect2: '异步Select2', attach: '附件', editor: '富文本编辑器', SUBMIT: '提交', RESET: '重置', multiSelect: '多选控件' }, types: { date: 'DATE_RANGE', textarea: 'TEXTAREA', search: 'SEARCH', radio: 'RADIO', checkbox: 'CHECKBOX', number: 'NUMBER', // 有问题
+	    _Fetch2.default.set({ querySyncSelect1: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1', querySyncSelect2: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1' });var simpleConfig = { title: '内置组件', fields: [['name', 'date'], ['textarea', 'select'], ['asyncSelect1', 'asyncSelect2'], ['search', ''], ['radio', 'checkbox'], ['multiSelect'], ['editor'], ['SUBMIT']], labels: { name: '普通文本输入[这里是placeholder|这是info]', date: '日期时间段[这里是placeholder|这是日期]', number: '数字输入控件', textarea: '多行文本输入[这里是placeholder|这是多行文本]', search: '搜索组件[请搜索|这是搜索]', radio: '单选组[请单选|这是单选组]', checkbox: '多选组[请选择|这是多选组]', select: '下拉选择[请选择]', employee: '雇员搜索[工号/花名]', cgtype: '采购类型', asyncSelect1: '异步Select1', asyncSelect2: '异步Select2', attach: '附件', editor: '富文本编辑器', SUBMIT: '提交', RESET: '重置', multiSelect: '多选控件' }, types: { date: 'DATE_RANGE', textarea: 'TEXTAREA', search: 'SEARCH', radio: 'RADIO', checkbox: 'CHECKBOX', number: 'NUMBER', // 有问题
 	        select: 'SELECT', asyncSelect1: 'SELECT', asyncSelect2: 'SELECT', employee: 'EmployeeSearch', cgtype: 'CgType', attach: 'Attach', editor: 'EDITOR', multiSelect: 'SELECT' }, props: { name: { required: true, readOnly: true }, radio: { required: true }, attach: { required: true }, date: { required: true }, select: { required: true }, multiSelect: { multiple: true } }, options: { select: { A: '测试', B: '呵呵' }, radio: { A: '男', B: '女' }, checkbox: { A: '电影', B: '读书', C: '旅游' } }, asyncOptions: { asyncSelect1: 'querySyncSelect1', asyncSelect2: 'querySyncSelect2', multiSelect: 'querySyncSelect1' } };var firstFormData = { name: '普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本', radio: 'A', asyncSelect1: { key: 'A', value: '组一' }, asyncSelect2: { key: 'A', value: '组一/选项一' }, multiSelect: [{ key: 'A', value: '组一' }, { key: 'B', value: '组二' }] };return _react2.default.createElement(
 	      'div',
 	      null,
@@ -28263,9 +28264,7 @@ webpackJsonp([0,18],[
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'body' },
-	        _react2.default.createElement(_Form2.default, { ref: function ref(c) {
-	            return _this.form1 = c;
-	          }, defaultData: firstFormData, config: simpleConfig, onSubmit: function onSubmit(formData) {
+	        _react2.default.createElement(_Form2.default, { defaultData: firstFormData, config: simpleConfig, onSubmit: function onSubmit(formData) {
 	            return console.log(formData);
 	          } })
 	      )
@@ -28280,11 +28279,12 @@ webpackJsonp([0,18],[
 	  "toc": ["ul"],
 	  "jscode": ["pre", {
 	    "lang": "javascript",
-	    "highlighted": "<span class=\"token keyword\">import</span> Form <span class=\"token keyword\">from</span> <span class=\"token string\">'@ali/cg-react/dist/Form'</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword\">const</span> simpleConfig <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n  title<span class=\"token punctuation\">:</span> <span class=\"token string\">'内置组件'</span><span class=\"token punctuation\">,</span>\n  fields<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">[</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'name'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'date'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'textarea'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'select'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'asyncSelect1'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'asyncSelect2'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'search'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">''</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'radio'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'checkbox'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'multiSelect'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'editor'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'SUBMIT'</span><span class=\"token punctuation\">]</span>\n  <span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n  labels<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    name<span class=\"token punctuation\">:</span> <span class=\"token string\">'普通文本输入[这里是placeholder|这是info]'</span><span class=\"token punctuation\">,</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token string\">'日期时间段[这里是placeholder|这是日期]'</span><span class=\"token punctuation\">,</span>\n    number<span class=\"token punctuation\">:</span> <span class=\"token string\">'数字输入控件'</span><span class=\"token punctuation\">,</span>\n    textarea<span class=\"token punctuation\">:</span> <span class=\"token string\">'多行文本输入[这里是placeholder|这是多行文本]'</span><span class=\"token punctuation\">,</span>\n    search<span class=\"token punctuation\">:</span> <span class=\"token string\">'搜索组件[请搜索|这是搜索]'</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'单选组[请单选|这是单选组]'</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token string\">'多选组[请选择|这是多选组]'</span><span class=\"token punctuation\">,</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token string\">'下拉选择[请选择]'</span><span class=\"token punctuation\">,</span>\n    employee<span class=\"token punctuation\">:</span> <span class=\"token string\">'雇员搜索[工号/花名]'</span><span class=\"token punctuation\">,</span>\n    cgtype<span class=\"token punctuation\">:</span> <span class=\"token string\">'采购类型'</span><span class=\"token punctuation\">,</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'异步Select1'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'异步Select2'</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token string\">'附件'</span><span class=\"token punctuation\">,</span>\n    editor<span class=\"token punctuation\">:</span> <span class=\"token string\">'富文本编辑器'</span><span class=\"token punctuation\">,</span>\n    SUBMIT<span class=\"token punctuation\">:</span> <span class=\"token string\">'提交'</span><span class=\"token punctuation\">,</span>\n    RESET<span class=\"token punctuation\">:</span> <span class=\"token string\">'重置'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'多选控件'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  types<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token string\">'DATE_RANGE'</span><span class=\"token punctuation\">,</span>\n    textarea<span class=\"token punctuation\">:</span> <span class=\"token string\">'TEXTAREA'</span><span class=\"token punctuation\">,</span>\n    search<span class=\"token punctuation\">:</span> <span class=\"token string\">'SEARCH'</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'RADIO'</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token string\">'CHECKBOX'</span><span class=\"token punctuation\">,</span>\n    number<span class=\"token punctuation\">:</span> <span class=\"token string\">'NUMBER'</span><span class=\"token punctuation\">,</span> <span class=\"token comment\" spellcheck=\"true\">// 有问题</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    employee<span class=\"token punctuation\">:</span> <span class=\"token string\">'EmployeeSearch'</span><span class=\"token punctuation\">,</span>\n    cgtype<span class=\"token punctuation\">:</span> <span class=\"token string\">'CgType'</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token string\">'Attach'</span><span class=\"token punctuation\">,</span>\n    editor<span class=\"token punctuation\">:</span> <span class=\"token string\">'EDITOR'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  props<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    name<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span><span class=\"token punctuation\">,</span>\n      readOnly<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      multiple<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  options<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'测试'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'呵呵'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'男'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'女'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'电影'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'读书'</span><span class=\"token punctuation\">,</span>\n      C<span class=\"token punctuation\">:</span> <span class=\"token string\">'旅游'</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  asyncOptions<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect1'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect2'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect1'</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword\">let</span> firstFormData <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n  name<span class=\"token punctuation\">:</span> <span class=\"token string\">'普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本'</span><span class=\"token punctuation\">,</span>\n  radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n  asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n    value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n    value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一/选项一'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  multiSelect<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">[</span>\n    <span class=\"token punctuation\">{</span>\n      key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n      value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">{</span>\n      key<span class=\"token punctuation\">:</span> <span class=\"token string\">'B'</span><span class=\"token punctuation\">,</span>\n      value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组二'</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">]</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n\nReactDOM<span class=\"token punctuation\">.</span><span class=\"token function\">render</span><span class=\"token punctuation\">(</span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>div</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h1</span> <span class=\"token attr-name\">className</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">\"</span>title<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">></span></span>Form<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>h1</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>div</span> <span class=\"token attr-name\">className</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">\"</span>body<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">></span></span>\n    <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>Form</span>\n      <span class=\"token attr-name\">ref</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>c <span class=\"token operator\">=</span><span class=\"token operator\">></span> <span class=\"token keyword\">this</span><span class=\"token punctuation\">.</span>form1 <span class=\"token operator\">=</span> c<span class=\"token punctuation\">}</span></span>\n      <span class=\"token attr-name\">defaultData</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>firstFormData<span class=\"token punctuation\">}</span></span>\n      <span class=\"token attr-name\">config</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>simpleConfig<span class=\"token punctuation\">}</span></span>\n      <span class=\"token attr-name\">onSubmit</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>formData <span class=\"token operator\">=</span><span class=\"token operator\">></span> console<span class=\"token punctuation\">.</span><span class=\"token function\">log</span><span class=\"token punctuation\">(</span>formData<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span></span>\n    <span class=\"token punctuation\">/></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>div</span><span class=\"token punctuation\">></span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>div</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token punctuation\">,</span> mountNode<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>"
-	  }, ["code", "import Form from '@ali/cg-react/dist/Form';\n\nconst simpleConfig = {\n  title: '内置组件',\n  fields: [\n    ['name', 'date'],\n    ['textarea', 'select'],\n    ['asyncSelect1', 'asyncSelect2'],\n    ['search', ''],\n    ['radio', 'checkbox'],\n    ['multiSelect'],\n    ['editor'],\n    ['SUBMIT']\n  ],\n  labels: {\n    name: '普通文本输入[这里是placeholder|这是info]',\n    date: '日期时间段[这里是placeholder|这是日期]',\n    number: '数字输入控件',\n    textarea: '多行文本输入[这里是placeholder|这是多行文本]',\n    search: '搜索组件[请搜索|这是搜索]',\n    radio: '单选组[请单选|这是单选组]',\n    checkbox: '多选组[请选择|这是多选组]',\n    select: '下拉选择[请选择]',\n    employee: '雇员搜索[工号/花名]',\n    cgtype: '采购类型',\n    asyncSelect1: '异步Select1',\n    asyncSelect2: '异步Select2',\n    attach: '附件',\n    editor: '富文本编辑器',\n    SUBMIT: '提交',\n    RESET: '重置',\n    multiSelect: '多选控件'\n  },\n  types: {\n    date: 'DATE_RANGE',\n    textarea: 'TEXTAREA',\n    search: 'SEARCH',\n    radio: 'RADIO',\n    checkbox: 'CHECKBOX',\n    number: 'NUMBER', // 有问题\n    select: 'SELECT',\n    asyncSelect1: 'SELECT',\n    asyncSelect2: 'SELECT',\n    employee: 'EmployeeSearch',\n    cgtype: 'CgType',\n    attach: 'Attach',\n    editor: 'EDITOR',\n    multiSelect: 'SELECT'\n  },\n  props: {\n    name: {\n      required: true,\n      readOnly: true\n    },\n    radio: {\n      required: true\n    },\n    attach: {\n      required: true\n    },\n    date: {\n      required: true\n    },\n    select: {\n      required: true\n    },\n    multiSelect: {\n      multiple: true\n    }\n  },\n  options: {\n    select: {\n      A: '测试',\n      B: '呵呵'\n    },\n    radio: {\n      A: '男',\n      B: '女'\n    },\n    checkbox: {\n      A: '电影',\n      B: '读书',\n      C: '旅游'\n    }\n  },\n  asyncOptions: {\n    asyncSelect1: 'querySyncSelect1',\n    asyncSelect2: 'querySyncSelect2',\n    multiSelect: 'querySyncSelect1'\n  }\n};\n\nlet firstFormData = {\n  name: '普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本',\n  radio: 'A',\n  asyncSelect1: {\n    key: 'A',\n    value: '组一'\n  },\n  asyncSelect2: {\n    key: 'A',\n    value: '组一/选项一'\n  },\n  multiSelect: [\n    {\n      key: 'A',\n      value: '组一'\n    },\n    {\n      key: 'B',\n      value: '组二'\n    }\n  ]\n};\n\nReactDOM.render(\n<div>\n  <h1 className=\"title\">Form</h1>\n  <div className=\"body\">\n    <Form\n      ref={c => this.form1 = c}\n      defaultData={firstFormData}\n      config={simpleConfig}\n      onSubmit={formData => console.log(formData)}\n    />\n  </div>\n</div>\n  , mountNode);"]]
+	    "highlighted": "<span class=\"token keyword\">import</span> Form <span class=\"token keyword\">from</span> <span class=\"token string\">'@ali/cg-react/dist/Form2'</span><span class=\"token punctuation\">;</span>\n<span class=\"token keyword\">import</span> Fetch <span class=\"token keyword\">from</span> <span class=\"token string\">'@ali/cg-react/dist/Fetch'</span><span class=\"token punctuation\">;</span>\n\nFetch<span class=\"token punctuation\">.</span><span class=\"token keyword\">set</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span>\n  querySyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1'</span><span class=\"token punctuation\">,</span>\n  querySyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1'</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword\">const</span> simpleConfig <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n  title<span class=\"token punctuation\">:</span> <span class=\"token string\">'内置组件'</span><span class=\"token punctuation\">,</span>\n  fields<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">[</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'name'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'date'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'textarea'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'select'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'asyncSelect1'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'asyncSelect2'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'search'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">''</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'radio'</span><span class=\"token punctuation\">,</span> <span class=\"token string\">'checkbox'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'multiSelect'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'editor'</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">[</span><span class=\"token string\">'SUBMIT'</span><span class=\"token punctuation\">]</span>\n  <span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n  labels<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    name<span class=\"token punctuation\">:</span> <span class=\"token string\">'普通文本输入[这里是placeholder|这是info]'</span><span class=\"token punctuation\">,</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token string\">'日期时间段[这里是placeholder|这是日期]'</span><span class=\"token punctuation\">,</span>\n    number<span class=\"token punctuation\">:</span> <span class=\"token string\">'数字输入控件'</span><span class=\"token punctuation\">,</span>\n    textarea<span class=\"token punctuation\">:</span> <span class=\"token string\">'多行文本输入[这里是placeholder|这是多行文本]'</span><span class=\"token punctuation\">,</span>\n    search<span class=\"token punctuation\">:</span> <span class=\"token string\">'搜索组件[请搜索|这是搜索]'</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'单选组[请单选|这是单选组]'</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token string\">'多选组[请选择|这是多选组]'</span><span class=\"token punctuation\">,</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token string\">'下拉选择[请选择]'</span><span class=\"token punctuation\">,</span>\n    employee<span class=\"token punctuation\">:</span> <span class=\"token string\">'雇员搜索[工号/花名]'</span><span class=\"token punctuation\">,</span>\n    cgtype<span class=\"token punctuation\">:</span> <span class=\"token string\">'采购类型'</span><span class=\"token punctuation\">,</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'异步Select1'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'异步Select2'</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token string\">'附件'</span><span class=\"token punctuation\">,</span>\n    editor<span class=\"token punctuation\">:</span> <span class=\"token string\">'富文本编辑器'</span><span class=\"token punctuation\">,</span>\n    SUBMIT<span class=\"token punctuation\">:</span> <span class=\"token string\">'提交'</span><span class=\"token punctuation\">,</span>\n    RESET<span class=\"token punctuation\">:</span> <span class=\"token string\">'重置'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'多选控件'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  types<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token string\">'DATE_RANGE'</span><span class=\"token punctuation\">,</span>\n    textarea<span class=\"token punctuation\">:</span> <span class=\"token string\">'TEXTAREA'</span><span class=\"token punctuation\">,</span>\n    search<span class=\"token punctuation\">:</span> <span class=\"token string\">'SEARCH'</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'RADIO'</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token string\">'CHECKBOX'</span><span class=\"token punctuation\">,</span>\n    number<span class=\"token punctuation\">:</span> <span class=\"token string\">'NUMBER'</span><span class=\"token punctuation\">,</span> <span class=\"token comment\" spellcheck=\"true\">// 有问题</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span><span class=\"token punctuation\">,</span>\n    employee<span class=\"token punctuation\">:</span> <span class=\"token string\">'EmployeeSearch'</span><span class=\"token punctuation\">,</span>\n    cgtype<span class=\"token punctuation\">:</span> <span class=\"token string\">'CgType'</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token string\">'Attach'</span><span class=\"token punctuation\">,</span>\n    editor<span class=\"token punctuation\">:</span> <span class=\"token string\">'EDITOR'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'SELECT'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  props<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    name<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span><span class=\"token punctuation\">,</span>\n      readOnly<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    attach<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    date<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      required<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      multiple<span class=\"token punctuation\">:</span> <span class=\"token boolean\">true</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  options<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    select<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'测试'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'呵呵'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    radio<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'男'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'女'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    checkbox<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n      A<span class=\"token punctuation\">:</span> <span class=\"token string\">'电影'</span><span class=\"token punctuation\">,</span>\n      B<span class=\"token punctuation\">:</span> <span class=\"token string\">'读书'</span><span class=\"token punctuation\">,</span>\n      C<span class=\"token punctuation\">:</span> <span class=\"token string\">'旅游'</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  asyncOptions<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect1'</span><span class=\"token punctuation\">,</span>\n    asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect2'</span><span class=\"token punctuation\">,</span>\n    multiSelect<span class=\"token punctuation\">:</span> <span class=\"token string\">'querySyncSelect1'</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword\">let</span> firstFormData <span class=\"token operator\">=</span> <span class=\"token punctuation\">{</span>\n  name<span class=\"token punctuation\">:</span> <span class=\"token string\">'普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本'</span><span class=\"token punctuation\">,</span>\n  radio<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n  asyncSelect1<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n    value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  asyncSelect2<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n    value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一/选项一'</span>\n  <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n  multiSelect<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">[</span>\n    <span class=\"token punctuation\">{</span>\n      key<span class=\"token punctuation\">:</span> <span class=\"token string\">'A'</span><span class=\"token punctuation\">,</span>\n      value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组一'</span>\n    <span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span>\n    <span class=\"token punctuation\">{</span>\n      key<span class=\"token punctuation\">:</span> <span class=\"token string\">'B'</span><span class=\"token punctuation\">,</span>\n      value<span class=\"token punctuation\">:</span> <span class=\"token string\">'组二'</span>\n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">]</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">;</span>\n\nReactDOM<span class=\"token punctuation\">.</span><span class=\"token function\">render</span><span class=\"token punctuation\">(</span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>div</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h1</span> <span class=\"token attr-name\">className</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">\"</span>title<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">></span></span>Form<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>h1</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>div</span> <span class=\"token attr-name\">className</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">\"</span>body<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">></span></span>\n    <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>Form</span>\n      <span class=\"token attr-name\">defaultData</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>firstFormData<span class=\"token punctuation\">}</span></span>\n      <span class=\"token attr-name\">config</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>simpleConfig<span class=\"token punctuation\">}</span></span>\n      <span class=\"token attr-name\">onSubmit</span><span class=\"token script language-javascript\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">{</span>formData <span class=\"token operator\">=</span><span class=\"token operator\">></span> console<span class=\"token punctuation\">.</span><span class=\"token function\">log</span><span class=\"token punctuation\">(</span>formData<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span></span>\n    <span class=\"token punctuation\">/></span></span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>div</span><span class=\"token punctuation\">></span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>div</span><span class=\"token punctuation\">></span></span>\n  <span class=\"token punctuation\">,</span> mountNode<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>"
+	  }, ["code", "import Form from '@ali/cg-react/dist/Form2';\nimport Fetch from '@ali/cg-react/dist/Fetch';\n\nFetch.set({\n  querySyncSelect1: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1',\n  querySyncSelect2: 'http://dip.alibaba-inc.com/api/v2/services/schema/mock/35611?select=1'\n});\n\nconst simpleConfig = {\n  title: '内置组件',\n  fields: [\n    ['name', 'date'],\n    ['textarea', 'select'],\n    ['asyncSelect1', 'asyncSelect2'],\n    ['search', ''],\n    ['radio', 'checkbox'],\n    ['multiSelect'],\n    ['editor'],\n    ['SUBMIT']\n  ],\n  labels: {\n    name: '普通文本输入[这里是placeholder|这是info]',\n    date: '日期时间段[这里是placeholder|这是日期]',\n    number: '数字输入控件',\n    textarea: '多行文本输入[这里是placeholder|这是多行文本]',\n    search: '搜索组件[请搜索|这是搜索]',\n    radio: '单选组[请单选|这是单选组]',\n    checkbox: '多选组[请选择|这是多选组]',\n    select: '下拉选择[请选择]',\n    employee: '雇员搜索[工号/花名]',\n    cgtype: '采购类型',\n    asyncSelect1: '异步Select1',\n    asyncSelect2: '异步Select2',\n    attach: '附件',\n    editor: '富文本编辑器',\n    SUBMIT: '提交',\n    RESET: '重置',\n    multiSelect: '多选控件'\n  },\n  types: {\n    date: 'DATE_RANGE',\n    textarea: 'TEXTAREA',\n    search: 'SEARCH',\n    radio: 'RADIO',\n    checkbox: 'CHECKBOX',\n    number: 'NUMBER', // 有问题\n    select: 'SELECT',\n    asyncSelect1: 'SELECT',\n    asyncSelect2: 'SELECT',\n    employee: 'EmployeeSearch',\n    cgtype: 'CgType',\n    attach: 'Attach',\n    editor: 'EDITOR',\n    multiSelect: 'SELECT'\n  },\n  props: {\n    name: {\n      required: true,\n      readOnly: true\n    },\n    radio: {\n      required: true\n    },\n    attach: {\n      required: true\n    },\n    date: {\n      required: true\n    },\n    select: {\n      required: true\n    },\n    multiSelect: {\n      multiple: true\n    }\n  },\n  options: {\n    select: {\n      A: '测试',\n      B: '呵呵'\n    },\n    radio: {\n      A: '男',\n      B: '女'\n    },\n    checkbox: {\n      A: '电影',\n      B: '读书',\n      C: '旅游'\n    }\n  },\n  asyncOptions: {\n    asyncSelect1: 'querySyncSelect1',\n    asyncSelect2: 'querySyncSelect2',\n    multiSelect: 'querySyncSelect1'\n  }\n};\n\nlet firstFormData = {\n  name: '普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本普通文本',\n  radio: 'A',\n  asyncSelect1: {\n    key: 'A',\n    value: '组一'\n  },\n  asyncSelect2: {\n    key: 'A',\n    value: '组一/选项一'\n  },\n  multiSelect: [\n    {\n      key: 'A',\n      value: '组一'\n    },\n    {\n      key: 'B',\n      value: '组二'\n    }\n  ]\n};\n\nReactDOM.render(\n<div>\n  <h1 className=\"title\">Form</h1>\n  <div className=\"body\">\n    <Form\n      defaultData={firstFormData}\n      config={simpleConfig}\n      onSubmit={formData => console.log(formData)}\n    />\n  </div>\n</div>\n  , mountNode);"]]
 	};
 
 /***/ },
+/* 633 */,
 /* 634 */,
 /* 635 */,
 /* 636 */,
@@ -28297,8 +28297,7 @@ webpackJsonp([0,18],[
 /* 643 */,
 /* 644 */,
 /* 645 */,
-/* 646 */,
-/* 647 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28382,7 +28381,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 648 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28392,7 +28391,10 @@ webpackJsonp([0,18],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var React = __webpack_require__(1);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
 
 	var _uxcoreCascadeMultiSelect = __webpack_require__(361);
 
@@ -28475,7 +28477,7 @@ webpackJsonp([0,18],[
 	        cols = _props.cols,
 	        readOnly = _props.readOnly;
 
-	    return React.createElement(_uxcoreCascadeMultiSelect2['default'], {
+	    return _react2['default'].createElement(_uxcoreCascadeMultiSelect2['default'], {
 	      data: data,
 	      height: height,
 	      cols: cols,
@@ -28503,7 +28505,7 @@ webpackJsonp([0,18],[
 	  };
 
 	  return CgTypePopup;
-	}(React.Component);
+	}(_react2['default'].Component);
 
 	CgTypePopup.defaultProps = {
 	  height: 280,
@@ -28530,18 +28532,18 @@ webpackJsonp([0,18],[
 	};
 
 	CgTypePopup.propTypes = {
-	  data: React.PropTypes.array,
-	  cols: React.PropTypes.array,
-	  height: React.PropTypes.number,
-	  onConfirm: React.PropTypes.func,
-	  readOnly: React.PropTypes.bool
+	  data: _react2['default'].PropTypes.array,
+	  cols: _react2['default'].PropTypes.array,
+	  height: _react2['default'].PropTypes.number,
+	  onConfirm: _react2['default'].PropTypes.func,
+	  readOnly: _react2['default'].PropTypes.bool
 	};
 
 	exports['default'] = CgTypePopup;
 	module.exports = exports['default'];
 
 /***/ },
-/* 649 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28550,7 +28552,7 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _CgTypePopup = __webpack_require__(648);
+	var _CgTypePopup = __webpack_require__(647);
 
 	var _CgTypePopup2 = _interopRequireDefault(_CgTypePopup);
 
@@ -28562,7 +28564,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 650 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28608,7 +28610,7 @@ webpackJsonp([0,18],[
 	var NATION_SERVICE = exports.NATION_SERVICE = SERVICE_PREFIX + '/ceres/supplier/pub/enterpriseNorSupplierRpc/queryCountryCodeList.jsonp';
 
 /***/ },
-/* 651 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28618,11 +28620,11 @@ webpackJsonp([0,18],[
 	});
 	exports.QueryDistrict = undefined;
 
-	var _Fetch = __webpack_require__(147);
+	var _Fetch = __webpack_require__(140);
 
 	var _Fetch2 = _interopRequireDefault(_Fetch);
 
-	var _const = __webpack_require__(650);
+	var _const = __webpack_require__(649);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { 'default': obj };
@@ -28643,7 +28645,7 @@ webpackJsonp([0,18],[
 	_Fetch2['default'].after(_defineProperty({}, QueryDistrict, _const.afterDistrictService));
 
 /***/ },
-/* 652 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28668,7 +28670,7 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Uploader = __webpack_require__(1216);
+	var _Uploader = __webpack_require__(1217);
 
 	var _Uploader2 = _interopRequireDefault(_Uploader);
 
@@ -28835,7 +28837,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 653 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28844,7 +28846,7 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _FileUploader = __webpack_require__(652);
+	var _FileUploader = __webpack_require__(651);
 
 	var _FileUploader2 = _interopRequireDefault(_FileUploader);
 
@@ -28854,6 +28856,87 @@ webpackJsonp([0,18],[
 
 	exports['default'] = _FileUploader2['default'];
 	module.exports = exports['default'];
+
+/***/ },
+/* 653 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	/**
+	 * 兼容 用户类型、Option类型 的数据回显及获取
+	 * Author: changming <mailto:changming.zy@alibaba-inc.com>
+	 */
+
+	// 处理 FormData 适应老规则
+	var processToLevel1FormData = exports.processToLevel1FormData = function processToLevel1FormData(formConfig, formData) {
+	  if (!formData) {
+	    return formData;
+	  }
+	  var types = formConfig.types,
+	      props = formConfig.props;
+
+	  var back = {};
+	  Object.keys(formData).forEach(function (k) {
+	    if (types && types[k] === 'SELECT') {
+	      if (props[k] && props[k].multiple) {
+	        back[k] = formData[k].map(function (option) {
+	          return option.key;
+	        });
+	      } else if (typeof formData[k].key !== 'undefined') {
+	        back[k] = formData[k].key;
+	      } else {
+	        back[k] = formData[k];
+	      }
+	    } else {
+	      back[k] = formData[k];
+	    }
+	  });
+	  return back;
+	};
+
+	// 将老规则数据处理成新规则
+	var processToLevel2FormData = exports.processToLevel2FormData = function processToLevel2FormData(formConfig, formData, changedOptions) {
+	  if (!formData) {
+	    return formData;
+	  }
+	  var types = formConfig.types,
+	      options = formConfig.options,
+	      props = formConfig.props;
+
+	  var back = {};
+	  Object.keys(formData).forEach(function (k) {
+	    if (types && types[k] === 'SELECT') {
+	      (function () {
+	        var selectOptions = {};
+	        if (options[k]) {
+	          selectOptions = options[k];
+	        } else if (changedOptions[k]) {
+	          selectOptions = changedOptions[k];
+	        }
+	        if (props && props[k] && props[k].multiple) {
+	          back[k] = formData[k].map(function (key) {
+	            return {
+	              key: key,
+	              value: selectOptions[key]
+	            };
+	          });
+	        } else {
+	          back[k] = {
+	            key: formData[k],
+	            value: selectOptions[formData[k]]
+	          };
+	        }
+	      })();
+	    } else {
+	      back[k] = formData[k];
+	    }
+	  });
+	  return back;
+	};
 
 /***/ },
 /* 654 */
@@ -28887,19 +28970,21 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Form = __webpack_require__(1215);
-
-	var _Form2 = _interopRequireDefault(_Form);
-
 	var _objectAssign = __webpack_require__(5);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _Form = __webpack_require__(1216);
+
+	var _Form2 = _interopRequireDefault(_Form);
 
 	var _Button = __webpack_require__(245);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
 	var _Utils = __webpack_require__(15);
+
+	var _object = __webpack_require__(160);
 
 	var _FormFields = __webpack_require__(676);
 
@@ -28909,15 +28994,21 @@ webpackJsonp([0,18],[
 
 	var _i18n2 = _interopRequireDefault(_i18n);
 
-	var _CgComponent2 = __webpack_require__(647);
+	var _CgComponent2 = __webpack_require__(646);
 
 	var _CgComponent3 = _interopRequireDefault(_CgComponent2);
 
-	var _Fetch = __webpack_require__(147);
+	var _Fetch = __webpack_require__(140);
 
 	var _Fetch2 = _interopRequireDefault(_Fetch);
 
 	var _const = __webpack_require__(75);
+
+	var _DataUtils = __webpack_require__(653);
+
+	var _Dialog = __webpack_require__(159);
+
+	var _Dialog2 = _interopRequireDefault(_Dialog);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { 'default': obj };
@@ -28966,7 +29057,7 @@ webpackJsonp([0,18],[
 	    b = b[0];
 	    return {
 	      attr: attrName.replace(/\[\S*\]/g, ''),
-	      size: b.substring(1, b.length - 1) >> 0
+	      size: parseInt(b.substring(1, b.length - 1), 0)
 	    };
 	  }
 	  return {
@@ -29016,20 +29107,22 @@ webpackJsonp([0,18],[
 
 	    _this.state = {
 	      changedOptions: {},
-	      visibleRows: props.config.defaultVisibleRows
+	      visibleRows: props.config.defaultVisibleRows,
+	      data: props.data || props.defaultData || {}
 	    };
 	    _this.customChangedFields = {};
-	    _this.originFormData = (0, _objectAssign2['default'])({}, props.data);
+	    _this.originFormData = (0, _Utils.deepCopy)(_this.state.data);
+	    _this.instantValidateDate = false;
 	    return _this;
 	  }
 
-	  CgForm.prototype.componentWillMount = function componentWillMount() {
+	  CgForm.prototype.componentDidMount = function componentDidMount() {
 	    var _this2 = this;
 
 	    var asyncOptions = this.props.config.asyncOptions;
 	    var changedOptions = this.state.changedOptions;
 
-	    if (asyncOptions) {
+	    if (!this.props.readOnly && asyncOptions) {
 	      Object.keys(asyncOptions).forEach(function (name) {
 	        _Fetch2['default'].jsonp(asyncOptions[name]).then(function (data) {
 	          changedOptions[name] = data;
@@ -29037,10 +29130,36 @@ webpackJsonp([0,18],[
 	        });
 	      });
 	    }
+
+	    var data = this.state.data;
+
+	    Object.keys(data).forEach(function (key) {
+	      if (data[key] && data[key].key) {
+	        _this2.onSelectChange(key, data[key].key);
+	      }
+	    });
 	  };
 
 	  CgForm.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    this.originFormData = (0, _objectAssign2['default'])({}, nextProps.data);
+	    var _this3 = this;
+
+	    if (nextProps.data) {
+	      (function () {
+	        _this3.originFormData = (0, _Utils.deepCopy)(nextProps.data);
+
+	        var data = nextProps.data;
+
+	        var thisData = _this3.props.data;
+	        Object.keys(data).forEach(function (key) {
+	          if (data[key] && data[key].key) {
+	            if (thisData && (!thisData[key] || thisData[key].key !== data[key])) {
+	              _this3.onSelectChange(key, data[key].key);
+	            }
+	          }
+	        });
+	        _this3.setState({ data: nextProps.data });
+	      })();
+	    }
 	  };
 
 	  CgForm.prototype.onSubmit = function onSubmit() {
@@ -29054,10 +29173,10 @@ webpackJsonp([0,18],[
 	  // 获取 Form 的数据，有一部分是 uxcore-form 封装的，有一部分是自定义组件的
 
 
-	  CgForm.prototype.getFormData = function getFormData(data) {
-	    var _this3 = this;
+	  CgForm.prototype.getFormData = function getFormData(data, doValidate) {
+	    var _this4 = this;
 
-	    var doValidate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+	    var config = this.props.config;
 
 	    var formData = {};
 	    var uxcoreFormData = void 0;
@@ -29065,32 +29184,47 @@ webpackJsonp([0,18],[
 	      formData = data;
 	    } else {
 	      // 提交表单时 data 参数会为 undefined
-	      uxcoreFormData = this.refs.form.getValues();
+	      uxcoreFormData = this.refs.form.getValues(doValidate);
 	      formData = uxcoreFormData.values;
 	    }
 	    var content = (0, _objectAssign2['default'])({}, this.originFormData, this.customChangedFields, formData);
 	    this.originFormData = content; // 每次数据改变都暂存一次
 	    Object.keys(content).forEach(function (k) {
-	      if (_typeof(content[k]) === 'object' && content[k].hasOwnProperty('key')) {
-	        content[k] = content[k].key;
-	      }
-	      if (_typeof(content[k]) === 'object' && content[k].hasOwnProperty('main')) {
-	        content[k] = content[k].main;
-	      }
+	      content[k] = (0, _object.processToNull)(content[k]);
+
+	      if (_typeof(content[k]) === 'object' && content[k] !== null && content[k].hasOwnProperty('key') && config.types[k] === 'SELECT' // 只处理 SELECT 类型的 key
+	      ) {
+	          content[k] = content[k].key;
+	        }
+
+	      // if (
+	      //   typeof content[k] === 'object' &&
+	      //   content[k] !== null &&
+	      //   content[k].hasOwnProperty('main')
+	      // ) {
+	      //   content[k] = content[k].main;
+	      // }
+
 	      if (typeof content[k] === 'undefined' || content[k] === null || content[k] === 'ALL' || content[k] === '') {
 	        delete content[k];
 	      }
 	    });
+
 	    var errorFound = false;
 	    if (doValidate && this.props.config.props) {
 	      (function () {
-	        var configProps = _this3.props.config.props;
-	        Object.keys(configProps).forEach(function (k) {
-	          if (configProps[k].required && (content[k] === undefined || (0, _Utils.isArray)(content[k]) && content[k].length === 0)) {
-	            if (_this3.refs[k]) {
-	              _this3.refs[k].triggerError((0, _i18n2['default'])('common.required'));
+	        var configProps = _this4.props.config.props;
+	        _this4.props.config.fields.forEach(function (line) {
+	          for (var i = 0, l = line.length; i < l; i++) {
+	            if (line[i]) {
+	              var k = line[i];
+	              if (configProps[k] && configProps[k].required && (content[k] === undefined || (0, _Utils.isArray)(content[k]) && content[k].length === 0)) {
+	                if (_this4.refs[k]) {
+	                  _this4.refs[k].triggerError((0, _i18n2['default'])('common.required'));
+	                }
+	                errorFound = true;
+	              }
 	            }
-	            errorFound = true;
 	          }
 	        });
 	      })();
@@ -29101,11 +29235,18 @@ webpackJsonp([0,18],[
 	    if (errorFound) {
 	      return null;
 	    }
-	    return content;
+	    return (0, _DataUtils.processToLevel2FormData)(this.props.config, content, this.state.changedOptions);
 	  };
 
 	  CgForm.prototype.submit = function submit() {
+	    this.instantValidateDate = true;
 	    return this.onSubmit();
+	  };
+
+	  CgForm.prototype.getValidData = function getValidData(doValidate) {
+	    this.instantValidateDate = true;
+	    this.setState({ instantValidateDate: this.instantValidateDate });
+	    return this.getFormData(null, doValidate);
 	  };
 
 	  /*
@@ -29116,8 +29257,8 @@ webpackJsonp([0,18],[
 	  CgForm.prototype.renderFieldInConfig = function renderFieldInConfig(key, size, labelMap, otherProps) {
 	    var _props = this.props,
 	        config = _props.config,
-	        data = _props.data,
 	        readOnly = _props.readOnly;
+	    var data = this.state.data;
 
 	    var Cpnt = _FormFields2['default'][config.types[key]];
 	    return _react2['default'].createElement(OtherFormField, {
@@ -29135,13 +29276,13 @@ webpackJsonp([0,18],[
 	    }, otherProps)));
 	  };
 
-	  CgForm.prototype.onOtherFieldChange = function onOtherFieldChange(name, value) {
+	  CgForm.prototype.onOtherFieldChange = function onOtherFieldChange(name, value, extra) {
 	    this.customChangedFields[name] = value;
-	    this.onChange(this.customChangedFields);
+	    this.onChange(this.customChangedFields, name, extra);
 	  };
 
 	  CgForm.prototype.onSelectChange = function onSelectChange(name, optionKey) {
-	    var _this4 = this;
+	    var _this5 = this;
 
 	    /*
 	      此方法用来做异步获取 select
@@ -29158,43 +29299,24 @@ webpackJsonp([0,18],[
 	        (function () {
 	          var requestFunc = res.requestFunc,
 	              changedName = res.changedName;
-	          var changedOptions = _this4.state.changedOptions;
+	          var changedOptions = _this5.state.changedOptions;
 
 	          requestFunc(function (back, selectedOptionKey) {
+	            changedOptions[changedName] = (0, _Utils.deepCopy)(back);
 	            if (selectedOptionKey) {
-	              changedOptions[changedName] = _extends({}, back);
-	              _this4.refs.form.setValues(_defineProperty({}, changedName, selectedOptionKey));
+	              _this5.refs.form.setValues(_defineProperty({}, changedName, selectedOptionKey));
 	            } else {
-	              changedOptions[changedName] = _extends({ ALL: (0, _i18n2['default'])('common.all') }, back);
-	              _this4.refs.form.setValues(_defineProperty({}, changedName, 'ALL'));
+	              _this5.refs.form.setValues(_defineProperty({}, changedName, Object.keys(back)[0]));
 	            }
-	            _this4.setState({ changedOptions: changedOptions });
+	            _this5.setState({ changedOptions: changedOptions });
 	          });
 	        })();
 	      }
 	    }
 	  };
-	  /*
-	    resp : 服务端的返回数据
-	    name : Form data 要改变的属性名称
-	    value : Form[name] 的值
-	  */
-
-	  CgForm.prototype.onSelectFetch = function onSelectFetch(resp, name, value) {
-	    var onSelectFetch = this.props.config.onSelectFetch;
-
-	    var migratedData = {};
-	    if (onSelectFetch) {
-	      migratedData = onSelectFetch(resp, name);
-	    }
-	    if (value) {
-	      this.onSelectChange(name, { key: value });
-	    }
-	    return migratedData;
-	  };
 
 	  CgForm.prototype.renderField = function renderField(key, s) {
-	    var _this5 = this;
+	    var _this6 = this;
 
 	    // 渲染单个 Field
 	    var size = s;
@@ -29202,14 +29324,16 @@ webpackJsonp([0,18],[
 	      size = 1;
 	    }
 
+	    if (this.props.readOnly && typeof this.state.data[key] === 'undefined') {
+	      return _react2['default'].createElement('div', null);
+	    }
+
 	    if (!key) {
 	      // 渲染空格，占用布局
 	      return _react2['default'].createElement(OtherFormField, { key: key, jsxflex: size });
 	    }
 
-	    var _props2 = this.props,
-	        data = _props2.data,
-	        config = _props2.config;
+	    var config = this.props.config;
 	    var changedOptions = this.state.changedOptions;
 	    var labels = config.labels,
 	        options = config.options;
@@ -29220,32 +29344,27 @@ webpackJsonp([0,18],[
 	    }
 
 	    var otherProps = {};
+
 	    if (config.props && config.props[key]) {
 	      otherProps = config.props[key];
 	    }
+
+	    otherProps.locale = (0, _i18n2['default'])('common.locale');
+
 	    Object.keys(otherProps).forEach(function (key) {
 	      if (typeof otherProps[key] === 'function') {
-	        otherProps[key] = otherProps[key].bind(_this5);
+	        otherProps[key] = otherProps[key].bind(_this6);
 	      }
 	    });
+
+	    if (otherProps.readOnly) {
+	      otherProps.jsxmode = Constants.MODE.VIEW;
+	    }
 
 	    if (otherProps.required && !otherProps.jsxrules) {
 	      otherProps.jsxrules = [{
 	        validator: Validators.isNotEmpty, errMsg: (0, _i18n2['default'])('common.required')
 	      }];
-	    } else if (otherProps.jsxrules) {
-	      if (otherProps.required) {
-	        if ((0, _Utils.isArray)(otherProps.jsxrules)) {
-	          otherProps.jsxrules.push({
-	            validator: Validators.isNotEmpty, errMsg: (0, _i18n2['default'])('common.required')
-	          });
-	        } else {
-	          var rule = otherProps.jsxrules;
-	          otherProps.jsxrules = [{
-	            validator: Validators.isNotEmpty, errMsg: (0, _i18n2['default'])('common.required')
-	          }, rule];
-	        }
-	      }
 	    }
 
 	    var Cpnt = null;
@@ -29254,13 +29373,33 @@ webpackJsonp([0,18],[
 	      var processedType = (0, _Utils.processBrackets)(type);
 	      type = processedType.val;
 	      Cpnt = Fields[type] || Fields.TEXT;
+	      if ((type === 'DATE' || type === 'DATE_RANGE') && otherProps.required) {
+	        otherProps.jsxrules = [{
+	          validator: function validator(value) {
+	            if (typeof value === 'undefined') {
+	              return false;
+	            } else if ((0, _Utils.isArray)(value) && value.length < 2) {
+	              return false;
+	            }
+	            for (var i = 0, l = value.length; i < l; i++) {
+	              if (!value[i]) {
+	                return false;
+	              }
+	            }
+	            return true;
+	          },
+	          errMsg: (0, _i18n2['default'])('common.required')
+	        }];
+	        otherProps.autoMatchWidth = !this.props.readOnly;
+	        otherProps.instantValidate = this.instantValidateDate;
+	        otherProps.placeholder = [(0, _i18n2['default'])('common.pleaseSelectDate'), (0, _i18n2['default'])('common.pleaseSelectDate')];
+	      }
 	    } else {
 	      Cpnt = Fields.TEXT;
 	    }
 
 	    var labelRule = labels[key];
 	    var labelMap = (0, _Utils.processBrackets)(labelRule); // 分离 label[placeholder|tip] 这种字符串
-	    // labelMap = { val, placeholder, tip }
 	    var label = labelMap.val;
 	    var placeholder = null;
 	    var tip = null;
@@ -29304,40 +29443,57 @@ webpackJsonp([0,18],[
 	        });
 	      }));
 	    } else if (type === 'SELECT') {
-	      // let fetchUrl = null;
-	      var jsxdata = {};
+	      var _ret4 = function () {
+	        // let fetchUrl = null;
+	        var jsxdata = {}; // 选项数据
 
-	      // if (typeExtra) {
-	      //   fetchUrl = renderHref(typeExtra, data);
-	      // }
+	        // if (typeExtra) {
+	        //   fetchUrl = renderHref(typeExtra, data);
+	        // }
 
-	      if (options && options[key]) {
-	        jsxdata = options[key];
-	      }
+	        if (options && options[key]) {
+	          jsxdata = options[key];
+	        }
 
-	      if (changedOptions && changedOptions[key]) {
-	        jsxdata = changedOptions[key];
-	      }
+	        if (changedOptions && changedOptions[key]) {
+	          jsxdata = changedOptions[key];
+	        }
 
-	      return _react2['default'].createElement(Cpnt, _extends({
-	        key: key,
-	        jsxname: key,
-	        jsxlabel: label,
-	        jsxtips: tip,
-	        jsxflex: size,
-	        jsxshowLabel: true,
-	        placeholder: placeholder || (0, _i18n2['default'])('common.pleaseSelect'),
-	        showSearch: false,
-	        jsxdata: jsxdata,
-	        getPopupContainer: function getPopupContainer(trigger) {
-	          return trigger;
-	        },
-	        onSelect: this.onSelectChange.bind(this, key),
-	        afterFetch: function afterFetch(resp) {
-	          return _this5.onSelectFetch(resp, key, data[key]);
-	        },
-	        tidy: true
-	      }, otherProps));
+	        if (_this6.props.readOnly && _this6.propData && _this6.propData[key]) {
+	          if (config.props && config.props[key] && config.props[key].multiple) {
+	            if ((0, _Utils.isArray)(_this6.propData[key])) {
+	              jsxdata = {};
+	              _this6.propData[key].forEach(function (item) {
+	                jsxdata[item.key] = item.value;
+	              });
+	            }
+	          } else if (_this6.propData[key].key) {
+	            jsxdata = _defineProperty({}, _this6.propData[key].key, _this6.propData[key].value);
+	          }
+	        }
+
+	        return {
+	          v: _react2['default'].createElement(Cpnt, _extends({
+	            key: key,
+	            jsxname: key,
+	            jsxlabel: label,
+	            jsxtips: tip,
+	            jsxflex: size,
+	            jsxshowLabel: true,
+	            placeholder: placeholder || (0, _i18n2['default'])('common.pleaseSelect'),
+	            showSearch: false,
+	            jsxdata: jsxdata,
+	            getPopupContainer: function getPopupContainer(trigger) {
+	              return trigger;
+	            },
+	            onSelect: _this6.onSelectChange.bind(_this6, key)
+	            // afterFetch={resp => this.onSelectFetch(resp, key, data[key])}
+	            , tidy: true
+	          }, otherProps))
+	        };
+	      }();
+
+	      if ((typeof _ret4 === 'undefined' ? 'undefined' : _typeof(_ret4)) === "object") return _ret4.v;
 	    } else if (type === 'SEARCH') {
 	      return _react2['default'].createElement(Cpnt, _extends({
 	        key: key,
@@ -29358,23 +29514,30 @@ webpackJsonp([0,18],[
 	    if (type === 'EDITOR') {
 	      otherProps.jsxconfig = {
 	        statusbar: false,
+	        menubar: false,
+	        toolbar1: 'undo redo | fontselect fontsizeselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link upload',
+	        toolbar2: false,
 	        height: 300,
 	        content_style: 'div {color: #000;}',
+	        contextmenu: 'link image',
 	        uploadConfig: {
 	          inputName: _const.CERES_UPLOAD_NAME,
 	          actionUrl: _const.CERES_UPLOAD_SERVICE,
 	          formatResult: function formatResult(response) {
-	            var resp = JSON.parse(response.rawResponse.rawResponse);
-	            var _resp$content = resp.content,
-	                fileName = _resp$content.fileName,
-	                resourceId = _resp$content.resourceId;
+	            if (!response.hasError) {
+	              var _response$content = response.content,
+	                  fileName = _response$content.fileName,
+	                  resourceId = _response$content.resourceId;
 
-	            return {
-	              content: {
-	                name: fileName,
-	                downloadUrl: '' + _const.CERES_FILE_SERVICE + resourceId
-	              }
-	            };
+	              return {
+	                content: {
+	                  name: fileName,
+	                  downloarUrl: '' + _const.CERES_FILE_SERVICE + resourceId
+	                }
+	              };
+	            }
+	            _Dialog2['default'].alert('上传文件接口出错');
+	            return null;
 	          }
 	        }
 	      };
@@ -29392,16 +29555,16 @@ webpackJsonp([0,18],[
 	    }, otherProps));
 	  };
 
-	  CgForm.prototype.onChange = function onChange(data) {
-	    var _this6 = this;
+	  CgForm.prototype.onChange = function onChange(data, changedAttrName, extraData) {
+	    var _this7 = this;
 
 	    if (this.onChangeTiming) {
 	      clearTimeout(this.onChangeTiming);
 	    }
 	    this.onChangeTiming = setTimeout(function () {
-	      var cgFormData = _this6.getFormData(data, false);
+	      var cgFormData = _this7.getFormData(data, false);
 	      if (cgFormData) {
-	        _this6.props.onChange(cgFormData);
+	        _this7.props.onChange(cgFormData, changedAttrName, extraData);
 	      }
 	    }, 200);
 	  };
@@ -29410,18 +29573,20 @@ webpackJsonp([0,18],[
 
 
 	  CgForm.prototype.renderForm = function renderForm() {
-	    var _this7 = this;
+	    var _this8 = this;
 
-	    var _props3 = this.props,
-	        config = _props3.config,
-	        data = _props3.data,
-	        readOnly = _props3.readOnly;
-	    var visibleRows = this.state.visibleRows;
+	    var _props2 = this.props,
+	        config = _props2.config,
+	        readOnly = _props2.readOnly;
+	    var _state = this.state,
+	        visibleRows = _state.visibleRows,
+	        data = _state.data;
 
+	    this.propData = data;
 	    return _react2['default'].createElement(_Form2['default'], {
-	      jsxmode: readOnly ? Constants.MODE.VIEW : Constants.MODE.EDIT,
 	      ref: 'form',
-	      jsxvalues: data || {},
+	      jsxmode: readOnly ? Constants.MODE.VIEW : Constants.MODE.EDIT,
+	      jsxvalues: data ? (0, _DataUtils.processToLevel1FormData)(config, data) : {},
 	      jsxonChange: this.onChange.bind(this)
 	    }, config.fields.map(function (row, i0) {
 	      if (visibleRows && visibleRows.indexOf(i0) === -1) {
@@ -29429,7 +29594,7 @@ webpackJsonp([0,18],[
 	      }
 	      return _react2['default'].createElement(Row, { key: i0 }, row.map(function (cell) {
 	        var attrSize = getAttrSize(cell);
-	        return _this7.renderField(attrSize.attr, attrSize.size);
+	        return _this8.renderField(attrSize.attr, attrSize.size);
 	      }));
 	    }));
 	  };
@@ -29447,6 +29612,7 @@ webpackJsonp([0,18],[
 
 	CgForm.propTypes = {
 	  data: _react2['default'].PropTypes.object,
+	  defaultData: _react2['default'].PropTypes.object,
 	  config: _react2['default'].PropTypes.object,
 	  onSubmit: _react2['default'].PropTypes.func,
 	  onChange: _react2['default'].PropTypes.func,
@@ -29454,7 +29620,8 @@ webpackJsonp([0,18],[
 	};
 
 	CgForm.defaultProps = {
-	  data: {}, // 初始数据
+	  data: null,
+	  defaultData: null,
 	  config: null,
 	  onSubmit: function onSubmit() {},
 	  onChange: function onChange() {},
@@ -29503,6 +29670,10 @@ webpackJsonp([0,18],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
 
 	var _AddressSearch = __webpack_require__(678);
 
@@ -29560,7 +29731,7 @@ webpackJsonp([0,18],[
 	        data = _props.data,
 	        name = _props.name;
 
-	    return React.createElement(_AddressSearch2['default'], {
+	    return _react2['default'].createElement(_AddressSearch2['default'], {
 	      onChange: this.onChange.bind(this),
 	      data: data[name],
 	      readOnly: readOnly
@@ -29593,7 +29764,7 @@ webpackJsonp([0,18],[
 
 	var _i18n2 = _interopRequireDefault(_i18n);
 
-	var _AutoComplete = __webpack_require__(146);
+	var _AutoComplete = __webpack_require__(147);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
@@ -29723,6 +29894,10 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _BuOu = __webpack_require__(679);
 
 	var _BuOu2 = _interopRequireDefault(_BuOu);
@@ -29779,7 +29954,7 @@ webpackJsonp([0,18],[
 	        data = _props.data,
 	        name = _props.name;
 
-	    return React.createElement(_BuOu2['default'], { onChange: this.onChange.bind(this), data: data[name], readOnly: readOnly });
+	    return _react2['default'].createElement(_BuOu2['default'], { onChange: this.onChange.bind(this), data: data[name], readOnly: readOnly });
 	  };
 
 	  return BuOu;
@@ -29899,11 +30074,15 @@ webpackJsonp([0,18],[
 	  }return target;
 	};
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _FormField = __webpack_require__(66);
 
 	var _FormField2 = _interopRequireDefault(_FormField);
 
-	var _CgTypePopup = __webpack_require__(649);
+	var _CgTypePopup = __webpack_require__(648);
 
 	var _CgTypePopup2 = _interopRequireDefault(_CgTypePopup);
 
@@ -29967,7 +30146,7 @@ webpackJsonp([0,18],[
 	        readOnly = _props.readOnly,
 	        otherProps = _objectWithoutProperties(_props, ['data', 'name', 'readOnly']);
 
-	    return React.createElement(_CgTypePopup2['default'], _extends({
+	    return _react2['default'].createElement(_CgTypePopup2['default'], _extends({
 	      data: data[name],
 	      readOnly: readOnly,
 	      onConfirm: this.onCgTypeConfirm.bind(this)
@@ -30032,6 +30211,10 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _FormField2 = __webpack_require__(66);
 
 	var _FormField3 = _interopRequireDefault(_FormField2);
@@ -30095,7 +30278,7 @@ webpackJsonp([0,18],[
 	    if (configOptions) {
 	      options = configOptions[name];
 	    }
-	    return React.createElement(_ComboInput2['default'], {
+	    return _react2['default'].createElement(_ComboInput2['default'], {
 	      defaultValue: data[name],
 	      onChange: this.onChange.bind(this),
 	      placeholder: labelMap.placeholder,
@@ -30233,7 +30416,11 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var _AutoComplete = __webpack_require__(146);
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _AutoComplete = __webpack_require__(147);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
@@ -30297,7 +30484,7 @@ webpackJsonp([0,18],[
 	        name = _props.name,
 	        readOnly = _props.readOnly;
 
-	    return React.createElement(_AutoComplete2['default'], {
+	    return _react2['default'].createElement(_AutoComplete2['default'], {
 	      url: _const.SERVICE_PREFIX + '/ceres/pcproj/user/searchUserByKeyword.jsonp',
 	      params: { size: 10 },
 	      fieldName: 'key',
@@ -30360,6 +30547,10 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _Employee = __webpack_require__(681);
 
 	var _Employee2 = _interopRequireDefault(_Employee);
@@ -30418,7 +30609,7 @@ webpackJsonp([0,18],[
 	        readOnly = _props.readOnly,
 	        showDept = _props.showDept;
 
-	    return React.createElement(_Employee2['default'], {
+	    return _react2['default'].createElement(_Employee2['default'], {
 	      data: data[name],
 	      onChange: this.onChange.bind(this),
 	      multiple: multiple,
@@ -30439,10 +30630,16 @@ webpackJsonp([0,18],[
 
 	'use strict';
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var React = __webpack_require__(1);
+
 
 	var _Utils = __webpack_require__(15);
 
@@ -30451,12 +30648,12 @@ webpackJsonp([0,18],[
 	      parent = _ref.parent,
 	      visibleRows = _ref.visibleRows,
 	      icon = _ref.icon;
-	  return React.createElement('div', { className: (0, _Utils.pkls)('custom-field') }, React.createElement('span', { className: 'kuma-label' }), React.createElement('div', { className: 'kuma-uxform-field-content' }, React.createElement('div', { className: (0, _Utils.pkls)('form-fields-toggle') }, React.createElement('span', {
+	  return _react2['default'].createElement('div', { className: (0, _Utils.pkls)('custom-field') }, _react2['default'].createElement('span', { className: 'kuma-label' }), _react2['default'].createElement('div', { className: 'kuma-uxform-field-content' }, _react2['default'].createElement('div', { className: (0, _Utils.pkls)('form-fields-toggle') }, _react2['default'].createElement('span', {
 	    onClick: function onClick() {
 	      return parent.updateVisibleRows(visibleRows);
 	    },
 	    className: 'trigger'
-	  }, labelMap.val, React.createElement('i', { className: 'kuma-icon ' + icon })))));
+	  }, labelMap.val, _react2['default'].createElement('i', { className: 'kuma-icon ' + icon })))));
 	};
 
 	FieldsToggle.defaultProps = {
@@ -30464,11 +30661,11 @@ webpackJsonp([0,18],[
 	};
 
 	FieldsToggle.propTypes = {
-	  labelMap: React.PropTypes.object,
-	  name: React.PropTypes.string,
-	  parent: React.PropTypes.object,
-	  visibleRows: React.PropTypes.array,
-	  icon: React.PropTypes.string
+	  labelMap: _react2['default'].PropTypes.object,
+	  name: _react2['default'].PropTypes.string,
+	  parent: _react2['default'].PropTypes.object,
+	  visibleRows: _react2['default'].PropTypes.array,
+	  icon: _react2['default'].PropTypes.string
 	};
 
 	exports['default'] = FieldsToggle;
@@ -30486,11 +30683,15 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _FormField = __webpack_require__(66);
 
 	var _FormField2 = _interopRequireDefault(_FormField);
 
-	var _FileUploader = __webpack_require__(653);
+	var _FileUploader = __webpack_require__(652);
 
 	var _FileUploader2 = _interopRequireDefault(_FileUploader);
 
@@ -30541,7 +30742,7 @@ webpackJsonp([0,18],[
 	        data = _props.data,
 	        name = _props.name;
 
-	    return React.createElement(_FileUploader2['default'], {
+	    return _react2['default'].createElement(_FileUploader2['default'], {
 	      data: data && data[name] ? data[name] : [],
 	      onChange: this.onChange.bind(this),
 	      readOnly: this.props.readOnly
@@ -30678,6 +30879,10 @@ webpackJsonp([0,18],[
 	  }return target;
 	};
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _FormField2 = __webpack_require__(66);
 
 	var _FormField3 = _interopRequireDefault(_FormField2);
@@ -30746,7 +30951,7 @@ webpackJsonp([0,18],[
 	    delete otherProps.onChange;
 	    delete otherProps.type;
 	    var d = data[name];
-	    return React.createElement(_Input2['default'], _extends({
+	    return _react2['default'].createElement(_Input2['default'], _extends({
 	      type: this.getType(),
 	      onChange: this.onChange.bind(this),
 	      value: d
@@ -30866,6 +31071,10 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _classnames2 = __webpack_require__(4);
 
 	var _classnames3 = _interopRequireDefault(_classnames2);
@@ -30878,11 +31087,11 @@ webpackJsonp([0,18],[
 
 	var _Select2 = _interopRequireDefault(_Select);
 
-	var _Fetch = __webpack_require__(147);
+	var _Fetch = __webpack_require__(140);
 
 	var _Fetch2 = _interopRequireDefault(_Fetch);
 
-	var _CommonService = __webpack_require__(651);
+	var _CommonService = __webpack_require__(650);
 
 	var CommonService = _interopRequireWildcard(_CommonService);
 
@@ -31082,23 +31291,23 @@ webpackJsonp([0,18],[
 	        options3 = _state.options3,
 	        value = _state.value;
 
-	    return React.createElement('div', {
+	    return _react2['default'].createElement('div', {
 	      className: (0, _classnames3['default'])((_classnames = {}, _defineProperty(_classnames, (0, _Utils.pkls)('location-form-field'), true), _defineProperty(_classnames, 'cgant-enabled-third', enableThirdLevel), _classnames))
-	    }, React.createElement(_Select2['default'], {
+	    }, _react2['default'].createElement(_Select2['default'], {
 	      placeholder: (0, _i18n2['default'])('LocationFormField.1'),
 	      options: options1,
 	      onChange: this.onOptionChange.bind(this, 1),
 	      value: value[0],
 	      getPopupContainer: null,
 	      readOnly: readOnly
-	    }), React.createElement('span', { className: 'split' }), React.createElement(_Select2['default'], {
+	    }), _react2['default'].createElement('span', { className: 'split' }), _react2['default'].createElement(_Select2['default'], {
 	      placeholder: (0, _i18n2['default'])('LocationFormField.2'),
 	      options: options2,
 	      onChange: this.onOptionChange.bind(this, 2),
 	      value: value[1],
 	      getPopupContainer: null,
 	      readOnly: readOnly
-	    }), enableThirdLevel ? [React.createElement('span', { key: 'A', className: 'split' }), React.createElement(_Select2['default'], {
+	    }), enableThirdLevel ? [_react2['default'].createElement('span', { key: 'A', className: 'split' }), _react2['default'].createElement(_Select2['default'], {
 	      key: 'B',
 	      placeholder: (0, _i18n2['default'])('LocationFormField.3'),
 	      options: options3,
@@ -31157,6 +31366,10 @@ webpackJsonp([0,18],[
 	    }
 	  }return target;
 	};
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
 
 	var _PurchaseType = __webpack_require__(683);
 
@@ -31221,7 +31434,7 @@ webpackJsonp([0,18],[
 	        name = _props.name,
 	        others = _objectWithoutProperties(_props, ['readOnly', 'data', 'name']);
 
-	    return React.createElement(_PurchaseType2['default'], _extends({}, others, {
+	    return _react2['default'].createElement(_PurchaseType2['default'], _extends({}, others, {
 	      onChange: this.onChange.bind(this),
 	      data: data[name],
 	      readOnly: readOnly
@@ -31358,8 +31571,11 @@ webpackJsonp([0,18],[
 	  value: true
 	});
 
-	var React = __webpack_require__(1);
-	var _uxcoreHovercard = __webpack_require__(1032);
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _uxcoreHovercard = __webpack_require__(1033);
 
 	var _uxcoreHovercard2 = _interopRequireDefault(_uxcoreHovercard);
 
@@ -31371,7 +31587,7 @@ webpackJsonp([0,18],[
 
 	var _i18n2 = _interopRequireDefault(_i18n);
 
-	var _env = __webpack_require__(185);
+	var _env = __webpack_require__(186);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { 'default': obj };
@@ -31383,7 +31599,7 @@ webpackJsonp([0,18],[
 	  var children = _ref.children,
 	      emplId = _ref.emplId,
 	      locale = _ref.locale;
-	  return React.createElement(_uxcoreHovercard2['default'], {
+	  return _react2['default'].createElement(_uxcoreHovercard2['default'], {
 	    mode: _env.PRODUCTION_ENV ? 'prod' : 'test',
 	    emplId: emplId,
 	    locale: locale,
@@ -31397,13 +31613,13 @@ webpackJsonp([0,18],[
 	      });
 	      return token;
 	    }
-	  }, React.createElement('span', { className: 'cg-hovercard-wrap' }, children));
+	  }, _react2['default'].createElement('span', { className: 'cg-hovercard-wrap' }, children));
 	};
 
 	Hovercard.propTypes = {
-	  children: React.PropTypes.any.isRequired,
-	  locale: React.PropTypes.string,
-	  emplId: React.PropTypes.string
+	  children: _react2['default'].PropTypes.any.isRequired,
+	  locale: _react2['default'].PropTypes.string,
+	  emplId: _react2['default'].PropTypes.string
 	};
 
 	Hovercard.defaultProps = {
@@ -31424,14 +31640,17 @@ webpackJsonp([0,18],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var React = __webpack_require__(1);
 
 	var _class, _temp; /**
 	                    * 搜地址
 	                    * Author: changming <mailto:changming.zy@alibaba-inc.com>
 	                    */
 
-	var _AutoComplete = __webpack_require__(146);
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _AutoComplete = __webpack_require__(147);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
@@ -31496,9 +31715,9 @@ webpackJsonp([0,18],[
 	      value = data.value;
 	    }
 	    if (readOnly) {
-	      return React.createElement('div', { className: 'custom-readonly-wrap' }, value);
+	      return _react2['default'].createElement('div', { className: 'custom-readonly-wrap' }, value);
 	    }
-	    return React.createElement(_AutoComplete2['default'], {
+	    return _react2['default'].createElement(_AutoComplete2['default'], {
 	      url: _const.SERVICE_PREFIX + '/ceres/pr/common/queryLocationForAsset.jsonp',
 	      fieldName: 'address',
 	      params: {
@@ -31541,10 +31760,10 @@ webpackJsonp([0,18],[
 	  };
 
 	  return AddressSearch;
-	}(React.Component), _class.propTypes = {
-	  readOnly: React.PropTypes.bool,
-	  data: React.PropTypes.object,
-	  onChange: React.PropTypes.func
+	}(_react2['default'].Component), _class.propTypes = {
+	  readOnly: _react2['default'].PropTypes.bool,
+	  data: _react2['default'].PropTypes.object,
+	  onChange: _react2['default'].PropTypes.func
 	}, _temp);
 	exports['default'] = AddressSearch;
 	module.exports = exports['default'];
@@ -31845,7 +32064,7 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _AutoComplete = __webpack_require__(146);
+	var _AutoComplete = __webpack_require__(147);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
@@ -32101,7 +32320,7 @@ webpackJsonp([0,18],[
 
 	var _i18n2 = _interopRequireDefault(_i18n);
 
-	var _object = __webpack_require__(186);
+	var _object = __webpack_require__(160);
 
 	var _const = __webpack_require__(75);
 
@@ -32305,13 +32524,13 @@ webpackJsonp([0,18],[
 
 	var _i18n2 = _interopRequireDefault(_i18n);
 
-	var _Tip = __webpack_require__(184);
+	var _Tip = __webpack_require__(185);
 
 	var _Utils = __webpack_require__(15);
 
 	var _array = __webpack_require__(228);
 
-	var _object = __webpack_require__(186);
+	var _object = __webpack_require__(160);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { 'default': obj };
@@ -32618,7 +32837,7 @@ webpackJsonp([0,18],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _AutoComplete = __webpack_require__(146);
+	var _AutoComplete = __webpack_require__(147);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
@@ -32810,7 +33029,6 @@ webpackJsonp([0,18],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var React = __webpack_require__(1);
 
 	var _extends = Object.assign || function (target) {
 	  for (var i = 1; i < arguments.length; i++) {
@@ -32822,13 +33040,17 @@ webpackJsonp([0,18],[
 	  }return target;
 	};
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _Select = __webpack_require__(226);
 
 	var _Select2 = _interopRequireDefault(_Select);
 
 	var _Utils = __webpack_require__(15);
 
-	var _Tip = __webpack_require__(184);
+	var _Tip = __webpack_require__(185);
 
 	var _i18n = __webpack_require__(9);
 
@@ -32970,9 +33192,9 @@ webpackJsonp([0,18],[
 
 	    var infoTip = null;
 	    if (error) {
-	      infoTip = React.createElement(_Tip.IconTip, {
+	      infoTip = _react2['default'].createElement(_Tip.IconTip, {
 	        displayValue: error,
-	        icon: React.createElement('i', { className: 'kuma-icon kuma-icon-close-hover ' + (0, _Utils.pkls)('error-text') })
+	        icon: _react2['default'].createElement('i', { className: 'kuma-icon kuma-icon-close-hover ' + (0, _Utils.pkls)('error-text') })
 	      });
 	    }
 
@@ -32980,7 +33202,7 @@ webpackJsonp([0,18],[
 	    selectProps.value = value || undefined;
 	    // }
 
-	    return React.createElement('div', { className: (0, _Utils.pkls)('input-wrap') + ' ' + (error ? 'error' : '') }, readOnly || isEditingMode ? React.createElement('span', { style: { marginLeft: '10px' } }, options[value]) : React.createElement(_Select2['default'], _extends({}, selectProps, {
+	    return _react2['default'].createElement('div', { className: (0, _Utils.pkls)('input-wrap') + ' ' + (error ? 'error' : '') }, readOnly || isEditingMode ? _react2['default'].createElement('span', { style: { marginLeft: '10px' } }, options[value]) : _react2['default'].createElement(_Select2['default'], _extends({}, selectProps, {
 	      getPopupContainer: getPopupContainer,
 	      onClick: function onClick() {
 	        return _this3.setState({ error: false });
@@ -32989,7 +33211,7 @@ webpackJsonp([0,18],[
 	      notFoundContent: (0, _i18n2['default'])('common.notFound'),
 	      optionFilterProp: 'keyword'
 	    }), options ? Object.keys(options).map(function (key) {
-	      return React.createElement(Option, {
+	      return _react2['default'].createElement(Option, {
 	        key: key,
 	        value: key,
 	        keyword: options[key]
@@ -33001,15 +33223,15 @@ webpackJsonp([0,18],[
 	}(_EditingFormField3['default']);
 
 	Select.propTypes = {
-	  onChange: React.PropTypes.func,
-	  fieldName: React.PropTypes.string,
-	  required: React.PropTypes.bool,
-	  attrName: React.PropTypes.string,
-	  readOnly: React.PropTypes.bool,
-	  value: React.PropTypes.any,
-	  placeholder: React.PropTypes.string,
-	  getPopupContainer: React.PropTypes.func,
-	  showSearch: React.PropTypes.bool
+	  onChange: _react2['default'].PropTypes.func,
+	  fieldName: _react2['default'].PropTypes.string,
+	  required: _react2['default'].PropTypes.bool,
+	  attrName: _react2['default'].PropTypes.string,
+	  readOnly: _react2['default'].PropTypes.bool,
+	  value: _react2['default'].PropTypes.any,
+	  placeholder: _react2['default'].PropTypes.string,
+	  getPopupContainer: _react2['default'].PropTypes.func,
+	  showSearch: _react2['default'].PropTypes.bool
 	};
 
 	Select.defaultProps = {
@@ -33393,7 +33615,8 @@ webpackJsonp([0,18],[
 /* 1025 */,
 /* 1026 */,
 /* 1027 */,
-/* 1028 */
+/* 1028 */,
+/* 1029 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33424,8 +33647,8 @@ webpackJsonp([0,18],[
 	* All rights reserved.
 	*/
 	var classnames = __webpack_require__(4);
-	var Button = __webpack_require__(1140);
-	var getLang = __webpack_require__(1029);
+	var Button = __webpack_require__(1141);
+	var getLang = __webpack_require__(1030);
 
 	// 过滤级联结构，剔除 label
 	var processValueOnly = function processValueOnly(a) {
@@ -34324,7 +34547,7 @@ webpackJsonp([0,18],[
 	module.exports = CascadeMultiSelect;
 
 /***/ },
-/* 1029 */
+/* 1030 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34360,7 +34583,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 1030 */
+/* 1031 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34384,9 +34607,9 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(2);
 	var Component = React.Component;
-	var Tooltip = __webpack_require__(179);
-	var Button = __webpack_require__(1035);
-	var Emitter = __webpack_require__(1031);
+	var Tooltip = __webpack_require__(181);
+	var Button = __webpack_require__(1036);
+	var Emitter = __webpack_require__(1032);
 
 	var LANG = {
 	    "zh-cn": {
@@ -35193,7 +35416,7 @@ webpackJsonp([0,18],[
 	module.exports = Hovercard;
 
 /***/ },
-/* 1031 */
+/* 1032 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35428,7 +35651,7 @@ webpackJsonp([0,18],[
 	module.exports = EventEmitter;
 
 /***/ },
-/* 1032 */
+/* 1033 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35441,10 +35664,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1030);
+	module.exports = __webpack_require__(1031);
 
 /***/ },
-/* 1033 */
+/* 1034 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35575,7 +35798,7 @@ webpackJsonp([0,18],[
 	module.exports = Button;
 
 /***/ },
-/* 1034 */
+/* 1035 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35627,16 +35850,16 @@ webpackJsonp([0,18],[
 	module.exports = ButtonGroup;
 
 /***/ },
-/* 1035 */
+/* 1036 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _Button = __webpack_require__(1033);
+	var _Button = __webpack_require__(1034);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _ButtonGroup = __webpack_require__(1034);
+	var _ButtonGroup = __webpack_require__(1035);
 
 	var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
 
@@ -35654,7 +35877,7 @@ webpackJsonp([0,18],[
 	module.exports = _Button2["default"];
 
 /***/ },
-/* 1036 */
+/* 1037 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -35949,7 +36172,7 @@ webpackJsonp([0,18],[
 	});
 
 /***/ },
-/* 1037 */
+/* 1038 */
 /***/ function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -35975,7 +36198,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1038 */
+/* 1039 */
 /***/ function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -35990,7 +36213,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1039 */
+/* 1040 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -36066,11 +36289,11 @@ webpackJsonp([0,18],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 1040 */
+/* 1041 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203),
-	    root = __webpack_require__(145);
+	    root = __webpack_require__(146);
 
 	/* Built-in method references that are verified to be native. */
 	var DataView = getNative(root, 'DataView');
@@ -36079,14 +36302,14 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1041 */
+/* 1042 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var hashClear = __webpack_require__(1091),
-	    hashDelete = __webpack_require__(1092),
-	    hashGet = __webpack_require__(1093),
-	    hashHas = __webpack_require__(1094),
-	    hashSet = __webpack_require__(1095);
+	var hashClear = __webpack_require__(1092),
+	    hashDelete = __webpack_require__(1093),
+	    hashGet = __webpack_require__(1094),
+	    hashHas = __webpack_require__(1095),
+	    hashSet = __webpack_require__(1096);
 
 	/**
 	 * Creates a hash object.
@@ -36117,11 +36340,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1042 */
+/* 1043 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203),
-	    root = __webpack_require__(145);
+	    root = __webpack_require__(146);
 
 	/* Built-in method references that are verified to be native. */
 	var Promise = getNative(root, 'Promise');
@@ -36130,11 +36353,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1043 */
+/* 1044 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203),
-	    root = __webpack_require__(145);
+	    root = __webpack_require__(146);
 
 	/* Built-in method references that are verified to be native. */
 	var Set = getNative(root, 'Set');
@@ -36143,12 +36366,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1044 */
+/* 1045 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var MapCache = __webpack_require__(444),
-	    setCacheAdd = __webpack_require__(1116),
-	    setCacheHas = __webpack_require__(1117);
+	    setCacheAdd = __webpack_require__(1117),
+	    setCacheHas = __webpack_require__(1118);
 
 	/**
 	 *
@@ -36176,11 +36399,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1045 */
+/* 1046 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203),
-	    root = __webpack_require__(145);
+	    root = __webpack_require__(146);
 
 	/* Built-in method references that are verified to be native. */
 	var WeakMap = getNative(root, 'WeakMap');
@@ -36189,7 +36412,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1046 */
+/* 1047 */
 /***/ function(module, exports) {
 
 	/**
@@ -36210,7 +36433,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1047 */
+/* 1048 */
 /***/ function(module, exports) {
 
 	/**
@@ -36231,7 +36454,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1048 */
+/* 1049 */
 /***/ function(module, exports) {
 
 	/**
@@ -36259,7 +36482,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1049 */
+/* 1050 */
 /***/ function(module, exports) {
 
 	/**
@@ -36288,7 +36511,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1050 */
+/* 1051 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var copyObject = __webpack_require__(365),
@@ -36311,7 +36534,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1051 */
+/* 1052 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var copyObject = __webpack_require__(365),
@@ -36334,27 +36557,27 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1052 */
+/* 1053 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stack = __webpack_require__(445),
-	    arrayEach = __webpack_require__(1048),
+	    arrayEach = __webpack_require__(1049),
 	    assignValue = __webpack_require__(446),
-	    baseAssign = __webpack_require__(1050),
-	    baseAssignIn = __webpack_require__(1051),
-	    cloneBuffer = __webpack_require__(1072),
-	    copyArray = __webpack_require__(1079),
-	    copySymbols = __webpack_require__(1080),
-	    copySymbolsIn = __webpack_require__(1081),
-	    getAllKeys = __webpack_require__(1086),
+	    baseAssign = __webpack_require__(1051),
+	    baseAssignIn = __webpack_require__(1052),
+	    cloneBuffer = __webpack_require__(1073),
+	    copyArray = __webpack_require__(1080),
+	    copySymbols = __webpack_require__(1081),
+	    copySymbolsIn = __webpack_require__(1082),
+	    getAllKeys = __webpack_require__(1087),
 	    getAllKeysIn = __webpack_require__(603),
 	    getTag = __webpack_require__(606),
-	    initCloneArray = __webpack_require__(1096),
-	    initCloneByTag = __webpack_require__(1097),
-	    initCloneObject = __webpack_require__(1098),
+	    initCloneArray = __webpack_require__(1097),
+	    initCloneByTag = __webpack_require__(1098),
+	    initCloneObject = __webpack_require__(1099),
 	    isArray = __webpack_require__(156),
 	    isBuffer = __webpack_require__(456),
-	    isObject = __webpack_require__(176),
+	    isObject = __webpack_require__(178),
 	    keys = __webpack_require__(305);
 
 	/** Used to compose bitmasks for cloning. */
@@ -36493,10 +36716,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1053 */
+/* 1054 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(176);
+	var isObject = __webpack_require__(178);
 
 	/** Built-in value references. */
 	var objectCreate = Object.create;
@@ -36529,7 +36752,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1054 */
+/* 1055 */
 /***/ function(module, exports) {
 
 	/**
@@ -36548,7 +36771,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1055 */
+/* 1056 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(302),
@@ -36572,13 +36795,13 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1056 */
+/* 1057 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stack = __webpack_require__(445),
 	    equalArrays = __webpack_require__(601),
-	    equalByTag = __webpack_require__(1084),
-	    equalObjects = __webpack_require__(1085),
+	    equalByTag = __webpack_require__(1085),
+	    equalObjects = __webpack_require__(1086),
 	    getTag = __webpack_require__(606),
 	    isArray = __webpack_require__(156),
 	    isBuffer = __webpack_require__(456),
@@ -36666,7 +36889,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1057 */
+/* 1058 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stack = __webpack_require__(445),
@@ -36734,12 +36957,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1058 */
+/* 1059 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isFunction = __webpack_require__(615),
-	    isMasked = __webpack_require__(1100),
-	    isObject = __webpack_require__(176),
+	    isMasked = __webpack_require__(1101),
+	    isObject = __webpack_require__(178),
 	    toSource = __webpack_require__(611);
 
 	/**
@@ -36787,7 +37010,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1059 */
+/* 1060 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetTag = __webpack_require__(302),
@@ -36853,11 +37076,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1060 */
+/* 1061 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isPrototype = __webpack_require__(453),
-	    nativeKeys = __webpack_require__(1112);
+	    nativeKeys = __webpack_require__(1113);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -36889,12 +37112,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1061 */
+/* 1062 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(176),
+	var isObject = __webpack_require__(178),
 	    isPrototype = __webpack_require__(453),
-	    nativeKeysIn = __webpack_require__(1113);
+	    nativeKeysIn = __webpack_require__(1114);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -36928,11 +37151,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1062 */
+/* 1063 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsMatch = __webpack_require__(1057),
-	    getMatchData = __webpack_require__(1087),
+	var baseIsMatch = __webpack_require__(1058),
+	    getMatchData = __webpack_require__(1088),
 	    matchesStrictComparable = __webpack_require__(609);
 
 	/**
@@ -36956,12 +37179,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1063 */
+/* 1064 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIsEqual = __webpack_require__(448),
-	    get = __webpack_require__(1124),
-	    hasIn = __webpack_require__(1125),
+	    get = __webpack_require__(1125),
+	    hasIn = __webpack_require__(1126),
 	    isKey = __webpack_require__(452),
 	    isStrictComparable = __webpack_require__(607),
 	    matchesStrictComparable = __webpack_require__(609),
@@ -36995,11 +37218,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1064 */
+/* 1065 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(447),
-	    baseSet = __webpack_require__(1067),
+	    baseSet = __webpack_require__(1068),
 	    castPath = __webpack_require__(364);
 
 	/**
@@ -37031,7 +37254,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1065 */
+/* 1066 */
 /***/ function(module, exports) {
 
 	/**
@@ -37051,7 +37274,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1066 */
+/* 1067 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(447);
@@ -37073,13 +37296,13 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1067 */
+/* 1068 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assignValue = __webpack_require__(446),
 	    castPath = __webpack_require__(364),
 	    isIndex = __webpack_require__(451),
-	    isObject = __webpack_require__(176),
+	    isObject = __webpack_require__(178),
 	    toKey = __webpack_require__(303);
 
 	/**
@@ -37126,7 +37349,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1068 */
+/* 1069 */
 /***/ function(module, exports) {
 
 	/**
@@ -37152,7 +37375,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1069 */
+/* 1070 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(301),
@@ -37195,7 +37418,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1070 */
+/* 1071 */
 /***/ function(module, exports) {
 
 	/**
@@ -37215,7 +37438,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1071 */
+/* 1072 */
 /***/ function(module, exports) {
 
 	/**
@@ -37234,10 +37457,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1072 */
+/* 1073 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(145);
+	/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(146);
 
 	/** Detect free variable `exports`. */
 	var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -37276,7 +37499,7 @@ webpackJsonp([0,18],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(440)(module)))
 
 /***/ },
-/* 1073 */
+/* 1074 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cloneArrayBuffer = __webpack_require__(449);
@@ -37298,10 +37521,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1074 */
+/* 1075 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addMapEntry = __webpack_require__(1046),
+	var addMapEntry = __webpack_require__(1047),
 	    arrayReduce = __webpack_require__(597),
 	    mapToArray = __webpack_require__(608);
 
@@ -37326,7 +37549,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1075 */
+/* 1076 */
 /***/ function(module, exports) {
 
 	/** Used to match `RegExp` flags from their coerced string values. */
@@ -37349,10 +37572,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1076 */
+/* 1077 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addSetEntry = __webpack_require__(1047),
+	var addSetEntry = __webpack_require__(1048),
 	    arrayReduce = __webpack_require__(597),
 	    setToArray = __webpack_require__(610);
 
@@ -37377,7 +37600,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1077 */
+/* 1078 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(301);
@@ -37401,7 +37624,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1078 */
+/* 1079 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cloneArrayBuffer = __webpack_require__(449);
@@ -37423,7 +37646,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1079 */
+/* 1080 */
 /***/ function(module, exports) {
 
 	/**
@@ -37449,7 +37672,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1080 */
+/* 1081 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var copyObject = __webpack_require__(365),
@@ -37471,7 +37694,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1081 */
+/* 1082 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var copyObject = __webpack_require__(365),
@@ -37493,10 +37716,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1082 */
+/* 1083 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(145);
+	var root = __webpack_require__(146);
 
 	/** Used to detect overreaching core-js shims. */
 	var coreJsData = root['__core-js_shared__'];
@@ -37505,7 +37728,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1083 */
+/* 1084 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getNative = __webpack_require__(203);
@@ -37522,7 +37745,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1084 */
+/* 1085 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(301),
@@ -37640,7 +37863,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1085 */
+/* 1086 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var keys = __webpack_require__(305);
@@ -37735,7 +37958,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1086 */
+/* 1087 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGetAllKeys = __webpack_require__(599),
@@ -37757,7 +37980,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1087 */
+/* 1088 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isStrictComparable = __webpack_require__(607),
@@ -37787,7 +38010,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1088 */
+/* 1089 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(301);
@@ -37839,7 +38062,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1089 */
+/* 1090 */
 /***/ function(module, exports) {
 
 	/**
@@ -37858,7 +38081,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1090 */
+/* 1091 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var castPath = __webpack_require__(364),
@@ -37903,7 +38126,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1091 */
+/* 1092 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(367);
@@ -37924,7 +38147,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1092 */
+/* 1093 */
 /***/ function(module, exports) {
 
 	/**
@@ -37947,7 +38170,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1093 */
+/* 1094 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(367);
@@ -37983,7 +38206,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1094 */
+/* 1095 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(367);
@@ -38012,7 +38235,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1095 */
+/* 1096 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var nativeCreate = __webpack_require__(367);
@@ -38041,7 +38264,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1096 */
+/* 1097 */
 /***/ function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -38073,16 +38296,16 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1097 */
+/* 1098 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cloneArrayBuffer = __webpack_require__(449),
-	    cloneDataView = __webpack_require__(1073),
-	    cloneMap = __webpack_require__(1074),
-	    cloneRegExp = __webpack_require__(1075),
-	    cloneSet = __webpack_require__(1076),
-	    cloneSymbol = __webpack_require__(1077),
-	    cloneTypedArray = __webpack_require__(1078);
+	    cloneDataView = __webpack_require__(1074),
+	    cloneMap = __webpack_require__(1075),
+	    cloneRegExp = __webpack_require__(1076),
+	    cloneSet = __webpack_require__(1077),
+	    cloneSymbol = __webpack_require__(1078),
+	    cloneTypedArray = __webpack_require__(1079);
 
 	/** `Object#toString` result references. */
 	var boolTag = '[object Boolean]',
@@ -38159,10 +38382,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1098 */
+/* 1099 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCreate = __webpack_require__(1053),
+	var baseCreate = __webpack_require__(1054),
 	    getPrototype = __webpack_require__(604),
 	    isPrototype = __webpack_require__(453);
 
@@ -38183,7 +38406,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1099 */
+/* 1100 */
 /***/ function(module, exports) {
 
 	/**
@@ -38204,10 +38427,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1100 */
+/* 1101 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var coreJsData = __webpack_require__(1082);
+	var coreJsData = __webpack_require__(1083);
 
 	/** Used to detect methods masquerading as native. */
 	var maskSrcKey = (function() {
@@ -38230,7 +38453,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1101 */
+/* 1102 */
 /***/ function(module, exports) {
 
 	/**
@@ -38249,7 +38472,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1102 */
+/* 1103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(363);
@@ -38290,7 +38513,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1103 */
+/* 1104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(363);
@@ -38315,7 +38538,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1104 */
+/* 1105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(363);
@@ -38337,7 +38560,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1105 */
+/* 1106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assocIndexOf = __webpack_require__(363);
@@ -38369,10 +38592,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1106 */
+/* 1107 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Hash = __webpack_require__(1041),
+	var Hash = __webpack_require__(1042),
 	    ListCache = __webpack_require__(362),
 	    Map = __webpack_require__(443);
 
@@ -38396,7 +38619,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1107 */
+/* 1108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(366);
@@ -38420,7 +38643,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1108 */
+/* 1109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(366);
@@ -38442,7 +38665,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1109 */
+/* 1110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(366);
@@ -38464,7 +38687,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1110 */
+/* 1111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var getMapData = __webpack_require__(366);
@@ -38492,10 +38715,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1111 */
+/* 1112 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var memoize = __webpack_require__(1128);
+	var memoize = __webpack_require__(1129);
 
 	/** Used as the maximum memoize cache size. */
 	var MAX_MEMOIZE_SIZE = 500;
@@ -38524,7 +38747,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1112 */
+/* 1113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var overArg = __webpack_require__(454);
@@ -38536,7 +38759,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1113 */
+/* 1114 */
 /***/ function(module, exports) {
 
 	/**
@@ -38562,7 +38785,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1114 */
+/* 1115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(602);
@@ -38591,7 +38814,7 @@ webpackJsonp([0,18],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(440)(module)))
 
 /***/ },
-/* 1115 */
+/* 1116 */
 /***/ function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -38619,7 +38842,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1116 */
+/* 1117 */
 /***/ function(module, exports) {
 
 	/** Used to stand-in for `undefined` hash values. */
@@ -38644,7 +38867,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1117 */
+/* 1118 */
 /***/ function(module, exports) {
 
 	/**
@@ -38664,7 +38887,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1118 */
+/* 1119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(362);
@@ -38685,7 +38908,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1119 */
+/* 1120 */
 /***/ function(module, exports) {
 
 	/**
@@ -38709,7 +38932,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1120 */
+/* 1121 */
 /***/ function(module, exports) {
 
 	/**
@@ -38729,7 +38952,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1121 */
+/* 1122 */
 /***/ function(module, exports) {
 
 	/**
@@ -38749,7 +38972,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1122 */
+/* 1123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var ListCache = __webpack_require__(362),
@@ -38789,10 +39012,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1123 */
+/* 1124 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var memoizeCapped = __webpack_require__(1111);
+	var memoizeCapped = __webpack_require__(1112);
 
 	/** Used to match property names within property paths. */
 	var reLeadingDot = /^\./,
@@ -38823,7 +39046,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1124 */
+/* 1125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseGet = __webpack_require__(447);
@@ -38862,11 +39085,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1125 */
+/* 1126 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseHasIn = __webpack_require__(1054),
-	    hasPath = __webpack_require__(1090);
+	var baseHasIn = __webpack_require__(1055),
+	    hasPath = __webpack_require__(1091);
 
 	/**
 	 * Checks if `path` is a direct or inherited property of `object`.
@@ -38902,7 +39125,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1126 */
+/* 1127 */
 /***/ function(module, exports) {
 
 	/**
@@ -38929,7 +39152,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1127 */
+/* 1128 */
 /***/ function(module, exports) {
 
 	/**
@@ -38960,7 +39183,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1128 */
+/* 1129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var MapCache = __webpack_require__(444);
@@ -39039,7 +39262,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1129 */
+/* 1130 */
 /***/ function(module, exports) {
 
 	/** Error message constants. */
@@ -39085,12 +39308,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1130 */
+/* 1131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var baseIteratee = __webpack_require__(600),
-	    negate = __webpack_require__(1129),
-	    pickBy = __webpack_require__(1131);
+	    negate = __webpack_require__(1130),
+	    pickBy = __webpack_require__(1132);
 
 	/**
 	 * The opposite of `_.pickBy`; this method creates an object composed of
@@ -39120,12 +39343,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1131 */
+/* 1132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var arrayMap = __webpack_require__(595),
 	    baseIteratee = __webpack_require__(600),
-	    basePickBy = __webpack_require__(1064),
+	    basePickBy = __webpack_require__(1065),
 	    getAllKeysIn = __webpack_require__(603);
 
 	/**
@@ -39163,11 +39386,11 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1132 */
+/* 1133 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(1065),
-	    basePropertyDeep = __webpack_require__(1066),
+	var baseProperty = __webpack_require__(1066),
+	    basePropertyDeep = __webpack_require__(1067),
 	    isKey = __webpack_require__(452),
 	    toKey = __webpack_require__(303);
 
@@ -39201,7 +39424,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1133 */
+/* 1134 */
 /***/ function(module, exports) {
 
 	/**
@@ -39225,10 +39448,10 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1134 */
+/* 1135 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseToString = __webpack_require__(1069);
+	var baseToString = __webpack_require__(1070);
 
 	/**
 	 * Converts `value` to a string. An empty string is returned for `null`
@@ -39259,12 +39482,12 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1135 */
+/* 1136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*! natty-fetch.pc.js v2.2.2 | MIT License | https://github.com/jias/natty-fetch */
 	(function (global, factory) {
-	   true ? module.exports = factory(__webpack_require__(1136)) :
+	   true ? module.exports = factory(__webpack_require__(1137)) :
 	  typeof define === 'function' && define.amd ? define(['natty-storage'], factory) :
 	  (global.nattyFetch = factory(global.nattyStorage));
 	}(this, (function (nattyStorage) { 'use strict';
@@ -40869,7 +41092,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1136 */
+/* 1137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function webpackUniversalModuleDefinition(root, factory) {
@@ -41569,7 +41792,7 @@ webpackJsonp([0,18],[
 	;
 
 /***/ },
-/* 1137 */
+/* 1138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41690,15 +41913,15 @@ webpackJsonp([0,18],[
 	module.exports = Switch;
 
 /***/ },
-/* 1138 */
+/* 1139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1137);
+	module.exports = __webpack_require__(1138);
 
 /***/ },
-/* 1139 */
+/* 1140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41790,12 +42013,12 @@ webpackJsonp([0,18],[
 	module.exports = Button;
 
 /***/ },
-/* 1140 */
+/* 1141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _Button = __webpack_require__(1139);
+	var _Button = __webpack_require__(1140);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
@@ -41810,7 +42033,7 @@ webpackJsonp([0,18],[
 	                                    */
 
 /***/ },
-/* 1141 */
+/* 1142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41833,7 +42056,7 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	var Item = __webpack_require__(1142);
+	var Item = __webpack_require__(1143);
 	var React = __webpack_require__(1);
 
 	var shallowArrayCopy = function shallowArrayCopy(a) {
@@ -41933,7 +42156,7 @@ webpackJsonp([0,18],[
 	module.exports = CheckboxGroup;
 
 /***/ },
-/* 1142 */
+/* 1143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42008,7 +42231,7 @@ webpackJsonp([0,18],[
 	module.exports = CheckboxItem;
 
 /***/ },
-/* 1143 */
+/* 1144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42021,10 +42244,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1141);
+	module.exports = __webpack_require__(1142);
 
 /***/ },
-/* 1144 */
+/* 1145 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -42051,7 +42274,7 @@ webpackJsonp([0,18],[
 	module.exports = Const;
 
 /***/ },
-/* 1145 */
+/* 1146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42084,10 +42307,10 @@ webpackJsonp([0,18],[
 	var Calendar = __webpack_require__(369);
 	var assign = __webpack_require__(5);
 	var deepcopy = __webpack_require__(368);
-	var omitBy = __webpack_require__(1130);
-	var isNil = __webpack_require__(1127);
+	var omitBy = __webpack_require__(1131);
+	var isNil = __webpack_require__(1128);
 	var Formatter = __webpack_require__(65);
-	var addEventListener = __webpack_require__(1147);
+	var addEventListener = __webpack_require__(1148);
 
 	var CalendarPanel = {
 	  month: Calendar.MonthCalendar,
@@ -42380,7 +42603,7 @@ webpackJsonp([0,18],[
 	module.exports = DateFormField;
 
 /***/ },
-/* 1146 */
+/* 1147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42393,10 +42616,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1145);
+	module.exports = __webpack_require__(1146);
 
 /***/ },
-/* 1147 */
+/* 1148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42426,7 +42649,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1148 */
+/* 1149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42525,7 +42748,7 @@ webpackJsonp([0,18],[
 	module.exports = createFormField;
 
 /***/ },
-/* 1149 */
+/* 1150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42638,7 +42861,7 @@ webpackJsonp([0,18],[
 	module.exports = FormRow;
 
 /***/ },
-/* 1150 */
+/* 1151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42651,10 +42874,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1149);
+	module.exports = __webpack_require__(1150);
 
 /***/ },
-/* 1151 */
+/* 1152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42680,16 +42903,16 @@ webpackJsonp([0,18],[
 	 */
 
 	var React = __webpack_require__(1);
-	var FormRow = __webpack_require__(1150);
+	var FormRow = __webpack_require__(1151);
 	var classnames = __webpack_require__(4);
 	var deepcopy = __webpack_require__(368);
 	var deepEqual = __webpack_require__(243);
 	var Constants = __webpack_require__(53);
 	var Promise = __webpack_require__(442);
 
-	var Validators = __webpack_require__(1161);
-	var KeyCode = __webpack_require__(1160);
-	var FormRowTitle = __webpack_require__(1159);
+	var Validators = __webpack_require__(1162);
+	var KeyCode = __webpack_require__(1161);
+	var FormRowTitle = __webpack_require__(1160);
 
 	var Form = function (_React$Component) {
 	  _inherits(Form, _React$Component);
@@ -42930,7 +43153,7 @@ webpackJsonp([0,18],[
 	module.exports = Form;
 
 /***/ },
-/* 1152 */
+/* 1153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43036,7 +43259,7 @@ webpackJsonp([0,18],[
 	module.exports = ButtonGroupFormField;
 
 /***/ },
-/* 1153 */
+/* 1154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43056,7 +43279,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var FormField = __webpack_require__(223);
 	var Constants = __webpack_require__(53);
-	var Select = __webpack_require__(180);
+	var Select = __webpack_require__(182);
 	var assign = __webpack_require__(5);
 	var deepcopy = __webpack_require__(368);
 
@@ -43211,7 +43434,7 @@ webpackJsonp([0,18],[
 	module.exports = CascadeSelectFormField;
 
 /***/ },
-/* 1154 */
+/* 1155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43226,7 +43449,7 @@ webpackJsonp([0,18],[
 
 	var FormField = __webpack_require__(223);
 	var Constants = __webpack_require__(53);
-	var CheckboxGroup = __webpack_require__(1143);
+	var CheckboxGroup = __webpack_require__(1144);
 	var React = __webpack_require__(1);
 
 	var Item = CheckboxGroup.Item;
@@ -43295,7 +43518,7 @@ webpackJsonp([0,18],[
 	module.exports = CheckboxGroupFormField;
 
 /***/ },
-/* 1155 */
+/* 1156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43311,7 +43534,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var FormField = __webpack_require__(223);
 	var Constants = __webpack_require__(53);
-	var Tinymce = __webpack_require__(1204);
+	var Tinymce = __webpack_require__(1205);
 	var assign = __webpack_require__(5);
 	var deepEqual = __webpack_require__(614);
 
@@ -43405,7 +43628,7 @@ webpackJsonp([0,18],[
 	module.exports = EditorFormField;
 
 /***/ },
-/* 1156 */
+/* 1157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43482,7 +43705,7 @@ webpackJsonp([0,18],[
 	module.exports = NumberInputFormField;
 
 /***/ },
-/* 1157 */
+/* 1158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43501,7 +43724,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var FormField = __webpack_require__(223);
 	var Constants = __webpack_require__(53);
-	var RadioGroup = __webpack_require__(1183);
+	var RadioGroup = __webpack_require__(1184);
 
 	var Item = RadioGroup.Item;
 
@@ -43570,7 +43793,7 @@ webpackJsonp([0,18],[
 	module.exports = RadioGroupFormField;
 
 /***/ },
-/* 1158 */
+/* 1159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43592,7 +43815,7 @@ webpackJsonp([0,18],[
 	 */
 	var React = __webpack_require__(1);
 	var SelectFormField = __webpack_require__(622);
-	var Select = __webpack_require__(180);
+	var Select = __webpack_require__(182);
 	var assign = __webpack_require__(5);
 	var deepcopy = __webpack_require__(368);
 	var classnames = __webpack_require__(4);
@@ -43827,7 +44050,7 @@ webpackJsonp([0,18],[
 	module.exports = SearchFormField;
 
 /***/ },
-/* 1159 */
+/* 1160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43875,7 +44098,7 @@ webpackJsonp([0,18],[
 	module.exports = FormRowTitle;
 
 /***/ },
-/* 1160 */
+/* 1161 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43888,15 +44111,15 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 1161 */
+/* 1162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1214);
+	module.exports = __webpack_require__(1215);
 
 /***/ },
-/* 1162 */
+/* 1163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43908,30 +44131,30 @@ webpackJsonp([0,18],[
 	 * Copyright 2014-2015, Uxcore Team, Alinw.
 	 * All rights reserved.
 	 */
-	var Form = __webpack_require__(1151);
+	var Form = __webpack_require__(1152);
 
 	// 以 Form 插件的形式给出
-	Form.TextAreaFormField = __webpack_require__(1198);
+	Form.TextAreaFormField = __webpack_require__(1199);
 	Form.InputFormField = __webpack_require__(621);
-	Form.RadioGroupFormField = __webpack_require__(1157);
+	Form.RadioGroupFormField = __webpack_require__(1158);
 	Form.SelectFormField = __webpack_require__(622);
-	Form.NumberInputFormField = __webpack_require__(1156);
-	Form.DateFormField = __webpack_require__(1146);
-	Form.CheckboxGroupFormField = __webpack_require__(1154);
-	Form.CascadeSelectFormField = __webpack_require__(1153);
-	Form.OtherFormField = __webpack_require__(1169);
-	Form.ButtonGroupFormField = __webpack_require__(1152);
-	Form.EditorFormField = __webpack_require__(1155);
-	Form.SearchFormField = __webpack_require__(1158);
-	Form.SwitchFormField = __webpack_require__(1191);
-	Form.PickableFormField = __webpack_require__(1171);
+	Form.NumberInputFormField = __webpack_require__(1157);
+	Form.DateFormField = __webpack_require__(1147);
+	Form.CheckboxGroupFormField = __webpack_require__(1155);
+	Form.CascadeSelectFormField = __webpack_require__(1154);
+	Form.OtherFormField = __webpack_require__(1170);
+	Form.ButtonGroupFormField = __webpack_require__(1153);
+	Form.EditorFormField = __webpack_require__(1156);
+	Form.SearchFormField = __webpack_require__(1159);
+	Form.SwitchFormField = __webpack_require__(1192);
+	Form.PickableFormField = __webpack_require__(1172);
 	Form.FormField = __webpack_require__(223);
 
 	Form.createFormField = Form.FormField.createFormField;
 	module.exports = Form;
 
 /***/ },
-/* 1163 */
+/* 1164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43960,10 +44183,10 @@ webpackJsonp([0,18],[
 	var classnames = __webpack_require__(4);
 	var assign = __webpack_require__(5);
 
-	var util = __webpack_require__(1167);
-	var FormCount = __webpack_require__(1164);
-	var LeftAddon = __webpack_require__(1165);
-	var RightAddon = __webpack_require__(1166);
+	var util = __webpack_require__(1168);
+	var FormCount = __webpack_require__(1165);
+	var LeftAddon = __webpack_require__(1166);
+	var RightAddon = __webpack_require__(1167);
 
 	/**
 	 * extend FormField, rewrite renderField method
@@ -44162,7 +44385,7 @@ webpackJsonp([0,18],[
 	module.exports = InputFormField;
 
 /***/ },
-/* 1164 */
+/* 1165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44212,7 +44435,7 @@ webpackJsonp([0,18],[
 	module.exports = FormCount;
 
 /***/ },
-/* 1165 */
+/* 1166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44243,7 +44466,7 @@ webpackJsonp([0,18],[
 	module.exports = LeftAddon;
 
 /***/ },
-/* 1166 */
+/* 1167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44267,7 +44490,7 @@ webpackJsonp([0,18],[
 	module.exports = RightAddon;
 
 /***/ },
-/* 1167 */
+/* 1168 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -44301,7 +44524,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 1168 */
+/* 1169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44381,7 +44604,7 @@ webpackJsonp([0,18],[
 	module.exports = OtherFormField;
 
 /***/ },
-/* 1169 */
+/* 1170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44394,10 +44617,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1168);
+	module.exports = __webpack_require__(1169);
 
 /***/ },
-/* 1170 */
+/* 1171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44420,8 +44643,8 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 	var React = __webpack_require__(1);
-	var FormField = __webpack_require__(1173);
-	var Pickable = __webpack_require__(1177);
+	var FormField = __webpack_require__(1174);
+	var Pickable = __webpack_require__(1178);
 	var assign = __webpack_require__(5);
 	var Constants = __webpack_require__(53);
 
@@ -44555,7 +44778,7 @@ webpackJsonp([0,18],[
 	module.exports = PickableFormField;
 
 /***/ },
-/* 1171 */
+/* 1172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44568,10 +44791,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1170);
+	module.exports = __webpack_require__(1171);
 
 /***/ },
-/* 1172 */
+/* 1173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44591,7 +44814,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var Constants = __webpack_require__(53);
 	var classnames = __webpack_require__(4);
-	var assign = __webpack_require__(1174);
+	var assign = __webpack_require__(1175);
 	var deepequal = __webpack_require__(243);
 
 	var FormField = function (_React$Component) {
@@ -45029,7 +45252,7 @@ webpackJsonp([0,18],[
 	module.exports = FormField;
 
 /***/ },
-/* 1173 */
+/* 1174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45042,10 +45265,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1172);
+	module.exports = __webpack_require__(1173);
 
 /***/ },
-/* 1174 */
+/* 1175 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -45090,7 +45313,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1175 */
+/* 1176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45183,7 +45406,7 @@ webpackJsonp([0,18],[
 	module.exports = PickItem;
 
 /***/ },
-/* 1176 */
+/* 1177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45211,7 +45434,7 @@ webpackJsonp([0,18],[
 	var classnames = __webpack_require__(4);
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(2);
-	var Item = __webpack_require__(1175);
+	var Item = __webpack_require__(1176);
 
 	var Pickable = function (_React$Component) {
 	    _inherits(Pickable, _React$Component);
@@ -45307,7 +45530,7 @@ webpackJsonp([0,18],[
 	module.exports = Pickable;
 
 /***/ },
-/* 1177 */
+/* 1178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45320,10 +45543,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1176);
+	module.exports = __webpack_require__(1177);
 
 /***/ },
-/* 1178 */
+/* 1179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45466,7 +45689,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1179 */
+/* 1180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45595,7 +45818,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1180 */
+/* 1181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45608,14 +45831,14 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	var Progress = __webpack_require__(1179);
+	var Progress = __webpack_require__(1180);
 	Progress.Line = Progress;
-	Progress.Circle = __webpack_require__(1178);
+	Progress.Circle = __webpack_require__(1179);
 
 	module.exports = Progress;
 
 /***/ },
-/* 1181 */
+/* 1182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45639,7 +45862,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var classnames = __webpack_require__(4);
 
-	var Item = __webpack_require__(1182);
+	var Item = __webpack_require__(1183);
 
 	var Radiogroup = function (_React$Component) {
 	  _inherits(Radiogroup, _React$Component);
@@ -45710,7 +45933,7 @@ webpackJsonp([0,18],[
 	module.exports = Radiogroup;
 
 /***/ },
-/* 1182 */
+/* 1183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45789,7 +46012,7 @@ webpackJsonp([0,18],[
 	module.exports = RadiogroupItem;
 
 /***/ },
-/* 1183 */
+/* 1184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45802,10 +46025,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1181);
+	module.exports = __webpack_require__(1182);
 
 /***/ },
-/* 1184 */
+/* 1185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45824,13 +46047,13 @@ webpackJsonp([0,18],[
 	 * Created by xy on 15/4/13.
 	 */
 	var React = __webpack_require__(1);
-	var FormField = __webpack_require__(1186);
+	var FormField = __webpack_require__(1187);
 	var Constants = __webpack_require__(53);
-	var Select = __webpack_require__(180);
+	var Select = __webpack_require__(182);
 	var assign = __webpack_require__(5);
-	var Validator = __webpack_require__(1189);
+	var Validator = __webpack_require__(1190);
 	var isEqual = __webpack_require__(614);
-	var NattyFetch = __webpack_require__(1135);
+	var NattyFetch = __webpack_require__(1136);
 	var Promise = __webpack_require__(442);
 
 	var isArray = Validator.isArray;
@@ -46199,7 +46422,7 @@ webpackJsonp([0,18],[
 	module.exports = SelectFormField;
 
 /***/ },
-/* 1185 */
+/* 1186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46219,7 +46442,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var Constants = __webpack_require__(53);
 	var classnames = __webpack_require__(4);
-	var assign = __webpack_require__(1187);
+	var assign = __webpack_require__(1188);
 	var deepequal = __webpack_require__(243);
 
 	var FormField = function (_React$Component) {
@@ -46657,7 +46880,7 @@ webpackJsonp([0,18],[
 	module.exports = FormField;
 
 /***/ },
-/* 1186 */
+/* 1187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46670,10 +46893,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1185);
+	module.exports = __webpack_require__(1186);
 
 /***/ },
-/* 1187 */
+/* 1188 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -46718,7 +46941,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1188 */
+/* 1189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -46818,7 +47041,7 @@ webpackJsonp([0,18],[
 	module.exports = Validator;
 
 /***/ },
-/* 1189 */
+/* 1190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46831,10 +47054,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1188);
+	module.exports = __webpack_require__(1189);
 
 /***/ },
-/* 1190 */
+/* 1191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46857,8 +47080,8 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 	var React = __webpack_require__(1);
-	var Switch = __webpack_require__(1196);
-	var FormField = __webpack_require__(1193);
+	var Switch = __webpack_require__(1197);
+	var FormField = __webpack_require__(1194);
 	var assign = __webpack_require__(5);
 	var Constants = __webpack_require__(53);
 
@@ -46912,7 +47135,7 @@ webpackJsonp([0,18],[
 	module.exports = SwitchFormField;
 
 /***/ },
-/* 1191 */
+/* 1192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46925,10 +47148,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1190);
+	module.exports = __webpack_require__(1191);
 
 /***/ },
-/* 1192 */
+/* 1193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46948,7 +47171,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var Constants = __webpack_require__(53);
 	var classnames = __webpack_require__(4);
-	var assign = __webpack_require__(1194);
+	var assign = __webpack_require__(1195);
 	var deepequal = __webpack_require__(243);
 
 	var FormField = function (_React$Component) {
@@ -47386,7 +47609,7 @@ webpackJsonp([0,18],[
 	module.exports = FormField;
 
 /***/ },
-/* 1193 */
+/* 1194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47399,10 +47622,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1192);
+	module.exports = __webpack_require__(1193);
 
 /***/ },
-/* 1194 */
+/* 1195 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -47447,7 +47670,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1195 */
+/* 1196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47468,7 +47691,7 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	var RcSwitch = __webpack_require__(1138);
+	var RcSwitch = __webpack_require__(1139);
 
 	var Switch = function (_RcSwitch) {
 	    _inherits(Switch, _RcSwitch);
@@ -47494,7 +47717,7 @@ webpackJsonp([0,18],[
 	module.exports = Switch;
 
 /***/ },
-/* 1196 */
+/* 1197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47507,10 +47730,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1195);
+	module.exports = __webpack_require__(1196);
 
 /***/ },
-/* 1197 */
+/* 1198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47533,10 +47756,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	var FormField = __webpack_require__(1200);
+	var FormField = __webpack_require__(1201);
 	var Constants = __webpack_require__(53);
 	var assign = __webpack_require__(5);
-	var autosize = __webpack_require__(1036);
+	var autosize = __webpack_require__(1037);
 	var React = __webpack_require__(1);
 	var classnames = __webpack_require__(4);
 
@@ -47758,7 +47981,7 @@ webpackJsonp([0,18],[
 	module.exports = TextAreaFormField;
 
 /***/ },
-/* 1198 */
+/* 1199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47771,10 +47994,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1197);
+	module.exports = __webpack_require__(1198);
 
 /***/ },
-/* 1199 */
+/* 1200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47794,7 +48017,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var Constants = __webpack_require__(53);
 	var classnames = __webpack_require__(4);
-	var assign = __webpack_require__(1201);
+	var assign = __webpack_require__(1202);
 	var deepequal = __webpack_require__(243);
 
 	var FormField = function (_React$Component) {
@@ -48232,7 +48455,7 @@ webpackJsonp([0,18],[
 	module.exports = FormField;
 
 /***/ },
-/* 1200 */
+/* 1201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48245,10 +48468,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1199);
+	module.exports = __webpack_require__(1200);
 
 /***/ },
-/* 1201 */
+/* 1202 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -48293,7 +48516,7 @@ webpackJsonp([0,18],[
 
 
 /***/ },
-/* 1202 */
+/* 1203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48320,8 +48543,8 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var assign = __webpack_require__(5);
 
-	var util = __webpack_require__(1205);
-	var EditorConfig = __webpack_require__(1203);
+	var util = __webpack_require__(1206);
+	var EditorConfig = __webpack_require__(1204);
 	// Include all of the Native DOM and custom events from:
 	// https://github.com/tinymce/tinymce/blob/master/tools/docs/tinymce.Editor.js#L5-L12
 	var EVENTS = ['focusin', 'focusout', 'click', 'dblclick', 'mousedown', 'mouseup', 'mousemove', 'mouseover', 'beforepaste', 'paste', 'cut', 'copy', 'selectionchange', 'mouseout', 'mouseenter', 'mouseleave', 'keydown', 'keypress', 'keyup', 'contextmenu', 'dragend', 'dragover', 'draggesture', 'dragdrop', 'drop', 'drag', 'BeforeRenderUI', 'SetAttrib', 'PreInit', 'PostRender', 'init', 'deactivate', 'activate', 'NodeChange', 'BeforeExecCommand', 'ExecCommand', 'show', 'hide', 'ProgressState', 'LoadContent', 'SaveContent', 'BeforeSetContent', 'SetContent', 'BeforeGetContent', 'GetContent', 'VisualAid', 'remove', 'submit', 'reset', 'BeforeAddUndo', 'AddUndo', 'change', 'undo', 'redo', 'ClearUndos', 'ObjectSelected', 'ObjectResizeStart', 'ObjectResized', 'PreProcess', 'PostProcess', 'focus', 'blur'];
@@ -48466,7 +48689,7 @@ webpackJsonp([0,18],[
 	module.exports = Tinymce;
 
 /***/ },
-/* 1203 */
+/* 1204 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -48525,7 +48748,7 @@ webpackJsonp([0,18],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1204 */
+/* 1205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48538,10 +48761,10 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1202);
+	module.exports = __webpack_require__(1203);
 
 /***/ },
-/* 1205 */
+/* 1206 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -48562,7 +48785,7 @@ webpackJsonp([0,18],[
 	};
 
 /***/ },
-/* 1206 */
+/* 1207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48737,7 +48960,7 @@ webpackJsonp([0,18],[
 	module.exports = DefaultFileItem;
 
 /***/ },
-/* 1207 */
+/* 1208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48855,7 +49078,7 @@ webpackJsonp([0,18],[
 	module.exports = Dropzoom;
 
 /***/ },
-/* 1208 */
+/* 1209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -48868,8 +49091,8 @@ webpackJsonp([0,18],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
-	var Preview = __webpack_require__(1209);
-	var Progress = __webpack_require__(1210);
+	var Preview = __webpack_require__(1210);
+	var Progress = __webpack_require__(1211);
 	var util = __webpack_require__(330);
 
 	var _require = __webpack_require__(327);
@@ -49139,7 +49362,7 @@ webpackJsonp([0,18],[
 	module.exports = FileItem;
 
 /***/ },
-/* 1209 */
+/* 1210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49188,7 +49411,7 @@ webpackJsonp([0,18],[
 	module.exports = Preview;
 
 /***/ },
-/* 1210 */
+/* 1211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49204,7 +49427,7 @@ webpackJsonp([0,18],[
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(2);
 	var util = __webpack_require__(330);
-	var UxcoreProgress = __webpack_require__(1180);
+	var UxcoreProgress = __webpack_require__(1181);
 	var Line = UxcoreProgress.Line;
 
 	var Progress = function (_React$Component) {
@@ -49266,7 +49489,7 @@ webpackJsonp([0,18],[
 	module.exports = Progress;
 
 /***/ },
-/* 1211 */
+/* 1212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49291,7 +49514,7 @@ webpackJsonp([0,18],[
 	var util = __webpack_require__(330);
 	var FileList = __webpack_require__(623);
 	var Picker = __webpack_require__(487);
-	var Dropzoom = __webpack_require__(1207);
+	var Dropzoom = __webpack_require__(1208);
 	var i18n = __webpack_require__(488);
 	var RESETOPTIONS = ['name', 'url', 'params', 'action', 'data', 'headers', 'withCredentials', 'timeout', 'chunkEnable', 'chunkSize', 'chunkRetries', 'chunkProcessThreads', 'autoPending', 'auto', 'sizeLimit', 'fileSizeLimit'];
 
@@ -49532,15 +49755,15 @@ webpackJsonp([0,18],[
 	module.exports = Uploader;
 
 /***/ },
-/* 1212 */
+/* 1213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1211);
+	module.exports = __webpack_require__(1212);
 
 /***/ },
-/* 1213 */
+/* 1214 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -49640,7 +49863,7 @@ webpackJsonp([0,18],[
 	module.exports = Validator;
 
 /***/ },
-/* 1214 */
+/* 1215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -49653,20 +49876,20 @@ webpackJsonp([0,18],[
 	 * All rights reserved.
 	 */
 
-	module.exports = __webpack_require__(1213);
-
-/***/ },
-/* 1215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(1162);
-
+	module.exports = __webpack_require__(1214);
 
 /***/ },
 /* 1216 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1212);
+	module.exports = __webpack_require__(1163);
+
+
+/***/ },
+/* 1217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(1213);
 
 
 /***/ }
