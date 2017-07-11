@@ -23,7 +23,7 @@ webpackJsonp([19,18],[
 	    hash = _window$location.hash;
 
 	var location = '' + pathname + search + hash;
-	var basename = '/cgfe/cg-react-docs/dist/';
+	var basename = '/';
 	ReactRouter.match({ routes: routes, location: location, basename: basename }, function () {
 	  var router = React.createElement(ReactRouter.Router, {
 	    history: ReactRouter.useRouterHistory(history.createHistory)({ basename: basename }),
@@ -6433,8 +6433,8 @@ webpackJsonp([19,18],[
 
 	'use strict';
 
-	var rootPath = '/cgfe/cg-react-docs/dist/';
-	// const rootPath = '/';
+	// const rootPath = '/cgfe/cg-react-docs/dist/';
+	var rootPath = '/';
 
 	module.exports = {
 	  rootPath: rootPath,
